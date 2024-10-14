@@ -417,6 +417,58 @@ const formatPrice = {
 
     return price;
   },
+  SK: (price, options) => {
+    price = price.replace(".00", ",00");
+    price = price.replace(".99", ",99");
+
+    if (price.length === 8) {
+      price = price.split("").toSpliced(2, 0, " ").join("");
+    }
+
+    if (price.length === 7) {
+      price = price.split("").toSpliced(1, 0, " ").join("");
+    }
+
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
+
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
+
+    return price;
+  },
+  RO: (price, options) => {
+    if (price.length === 7) {
+      price = price.replace(".00", "");
+      price = price.split("").toSpliced(1, 0, ".").join("");
+    }
+
+    if (price.length === 6) {
+      price = price.replace(".99", ",99");
+      price = price;
+    }
+
+    if (price.length === 5) {
+      price = price.replace(".99", ",99");
+      price = price;
+    }
+
+    if (options && "decimals" in options && options.decimals) {
+      if (price.includes(".")) {
+        const splitted = price.split(".");
+      }
+
+      if (price.includes(",")) {
+        const splitted = price.split(",");
+      }
+    }
+
+    return price;
+  },
 };
 
 export function normalize(price, country, options) {
