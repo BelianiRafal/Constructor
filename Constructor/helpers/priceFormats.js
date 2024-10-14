@@ -9,7 +9,8 @@ const currencies = {
   danishKrona: "kr.",
   czechKrona: "Kč",
   norwegianKrone: ",-",
-  polandZloty: ",-"
+  polandZloty: ",-",
+  romanianLeu: "lei"
 };
 const relativePriceFormat = {
   DE: {
@@ -66,6 +67,9 @@ const relativePriceFormat = {
   SK: {
     currency: currencies.euro,
   },
+    RO: {
+    currency: currencies.romanianLeu,
+  },
 };
 const priceFormats = {
   DE: (price, options) => {
@@ -121,6 +125,9 @@ const priceFormats = {
   },
   SK: (price, options) => {
     return normalize(price, "SK", options) + " " + relativePriceFormat.SK.currency;
+  },
+  RO: (price, options) => {
+    return normalize(price, "RO", options) + " " + relativePriceFormat.RO.currency;
   },
 };
 
