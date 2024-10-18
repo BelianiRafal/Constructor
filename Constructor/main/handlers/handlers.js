@@ -8,6 +8,7 @@ import _header from "../data/header.js";
 import _footer from "../data/footer.js";
 
 export class TemplateHandlers {
+  isCalled = false;
   constructor({
     products,
     categoriesLinks,
@@ -21,21 +22,29 @@ export class TemplateHandlers {
     this.categoriesTitles = categoriesTitles;
     this.footer = footer;
     this.header = header;
-    this.templates = templates
+    this.templates = templates;
   }
 
   getProductById = (productId, src, options) => {
+    if (!this.isCalled && !this.products) {
+      this.isCalled = true;
+      Toastify({
+        text: "Set products for campaign.",
+        escapeMarkup: false,
+        duration: 3000,
+      }).showToast();
+    }
     const country = getState("country");
     const shop = getState("shop");
     const languageHREF = shop.languages.find(
       (item) => item.language.slug === country
     );
 
-    let country_products = this.products.filter(
+    let country_products = this.products?.filter(
       (product) => product.country === shop.slug.toLowerCase()
     );
 
-    const product = country_products.find(
+    const product = country_products?.find(
       (product) => Number(product.main_id) === Number(productId)
     );
 
@@ -53,7 +62,8 @@ export class TemplateHandlers {
       product.href.hrefs[languageHREF.language.title].value +
       ".html";
     return handleProduct(
-      src ? { ...product, href, src } : { ...product, href }, options
+      src ? { ...product, href, src } : { ...product, href },
+      options
     );
   };
 

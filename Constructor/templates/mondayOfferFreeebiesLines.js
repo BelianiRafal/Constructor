@@ -89,9 +89,7 @@ export async function mondayOfferFreeebiesLines({
     },
     { type }
   )}
-  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${
-    background || "#ffffff"
-  }; color: #000;" id="newsletter">
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: ${background}; color: #000;" id="newsletter">
         <tbody>
               <tr>
                   <td align="center">
@@ -113,7 +111,7 @@ export async function mondayOfferFreeebiesLines({
 
               <tr>
                   <td class="newsletterContainer" style="color: ${
-                    offerPart.color || "#000"
+                    offerPart?.color || "#000"
                   };">
                       ${Space()}
                       ${
@@ -176,9 +174,9 @@ export async function mondayOfferFreeebiesLines({
               </tr>
 
               <tr>
-                <td style="background-color: ${
-                  background || "#ffffff"
-                }; color: ${freebies.options?.color || "#000"};">
+                <td style="background-color: ${background}; color: ${
+    freebies.options?.color || "#000"
+  };">
                   ${FreebiesGenerator({
                     background,
                     freebies: freebies.items,
@@ -195,7 +193,7 @@ export async function mondayOfferFreeebiesLines({
 
                 <tr>
                     <td style="background-color: ${
-                      intro?.background || background || "#ffffff"
+                      intro.background || background
                     };">
                       ${Space()}
                     </td>
@@ -203,7 +201,7 @@ export async function mondayOfferFreeebiesLines({
 
                 <tr>
                     <td class="newsletterContainer" style="background-color: ${
-                      intro?.background || background || "#ffffff"
+                      intro?.background || background
                     };">
                         ${Intro({
                           data: queries.intro,
@@ -213,7 +211,7 @@ export async function mondayOfferFreeebiesLines({
 
                 <tr>
                     <td style="background-color: ${
-                      categories[0]?.background || background || "#ffffff"
+                      categories[0]?.background || background
                     };">
                         ${Space({ className: "newsletterBottom80px" })}
                     </td>
@@ -222,18 +220,16 @@ export async function mondayOfferFreeebiesLines({
                 
                 <tr>
                     <td style="background-color: ${
-                      categories[0]?.background || background || "#ffffff"
+                      categories[0]?.background || background
                     }; color: ${categories[0]?.color || "#000000"}">
                       ${Category({
                         href:
                           typeof categories[0].href === "object"
                             ? categories[0].href[country]
                             : getCategoryLink(categories[0].href),
-                        name:
-                          "isCategoriesDB" in categories[0] &&
-                          categories[0].isCategoriesDB
-                            ? getCategoryTitle(categories[0].name)
-                            : queries.categories[0],
+                        name: queries?.categories ?
+                              queries.categories[0] :
+                              getCategoryTitle(categories[0].name),
                         src: categories[0].src,
                         cta: getPhrase("Shop now"),
                         color: categories[0]?.color,
@@ -253,7 +249,7 @@ export async function mondayOfferFreeebiesLines({
 
                 <tr>
                     <td style="background-color: ${
-                      categories[1]?.background || background || "#ffffff"
+                      categories[1]?.background || background
                     };">
                         ${Space()}
                     </td>
@@ -261,18 +257,16 @@ export async function mondayOfferFreeebiesLines({
 
                 <tr>
                     <td style="background-color: ${
-                      categories[1]?.background || background || "#ffffff"
+                      categories[1]?.background || background
                     }; color: ${categories[1]?.color || "#000000"}">
                         ${Category({
                           href:
                             typeof categories[0].href === "object"
                               ? categories[1].href[country]
                               : getCategoryLink(categories[1].href),
-                          name:
-                            "isCategoriesDB" in categories[1] &&
-                            categories[1].isCategoriesDB
-                              ? getCategoryTitle(categories[1].name)
-                              : queries.categories[1],
+                          name: queries?.categories ?
+                              queries.categories[1] :
+                              getCategoryTitle(categories[1].name),
                           src: categories[1].src,
                           cta: getPhrase("Shop now"),
                           color: categories[1]?.color,
@@ -292,7 +286,7 @@ export async function mondayOfferFreeebiesLines({
 
                 <tr>
                     <td style="background-color: ${
-                      categories[2]?.background || background || "#ffffff"
+                      categories[2]?.background || background
                     };">
                         ${Space()}
                     </td>
@@ -300,18 +294,16 @@ export async function mondayOfferFreeebiesLines({
 
                 <tr>
                     <td style="background-color: ${
-                      categories[2]?.background || background || "#ffffff"
+                      categories[2]?.background || background
                     }; color: ${categories[2]?.color || "#000000"}">
                         ${Category({
                           href:
                             typeof categories[0].href === "object"
                               ? categories[2].href[country]
                               : getCategoryLink(categories[2].href),
-                          name:
-                            "isCategoriesDB" in categories[2] &&
-                            categories[2].isCategoriesDB
-                              ? getCategoryTitle(categories[2].name)
-                              : queries.categories[2],
+                          name: queries?.categories ?
+                              queries.categories[2] :
+                              getCategoryTitle(categories[2].name),
                           src: categories[2].src,
                           cta: getPhrase("Shop now"),
                           color: categories[2]?.color,
@@ -332,7 +324,7 @@ export async function mondayOfferFreeebiesLines({
                 
                 <tr>
                     <td style="background-color: ${
-                      categories[3]?.background || background || "#ffffff"
+                      categories[3]?.background || background
                     };">
                         ${Space()}
                     </td>
@@ -340,18 +332,16 @@ export async function mondayOfferFreeebiesLines({
 
                 <tr>
                     <td style="background-color: ${
-                      categories[3]?.background || background || "#ffffff"
+                      categories[3]?.background || background
                     }; color: ${categories[3]?.color || "#000000"}">
                         ${Category({
                           href:
                             typeof categories[3].href === "object"
                               ? categories[3].href[country]
                               : getCategoryLink(categories[3].href),
-                          name:
-                            "isCategoriesDB" in categories[1] &&
-                            categories[1].isCategoriesDB
-                              ? getCategoryTitle(categories[3].name)
-                              : queries.categories[3],
+                          name: queries?.categories ?
+                              queries.categories[3] :
+                              getCategoryTitle(categories[3].name),
                           src: categories[3].src,
                           cta: getPhrase("Shop now"),
                           color: categories[3]?.color,

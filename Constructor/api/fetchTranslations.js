@@ -78,7 +78,7 @@ export async function getTranslations({
   name,
 }) {
   const token = localStorage.getItem("token");
-
+  // includeGridData
   try {
     const response = await fetch(
       `https://sheets.googleapis.com/v4/spreadsheets/${tableId}/values/${tableName}${tableRange}`,

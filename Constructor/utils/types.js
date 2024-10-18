@@ -95,6 +95,14 @@ export default {
             font-size: 30px;
             font-family: "Open Sans", sans-serif;
             line-height: 1.20;
+            font-weight: 600;
+          }
+
+          .newsletterIntroTitle {
+            font-size: 35px;
+            font-family: "Open Sans", sans-serif;
+            line-height: 1.20;
+            font-weight: 600;
           }
           
           .newsletterProductTitle {
@@ -252,6 +260,10 @@ export default {
             .newsletterTitle {
               font-size: 25px;
             }
+
+            .newsletterIntroTitle {
+              font-size: 28px;
+            }
           
             .newsletterTitleOfferPart {
               font-size: 25px;
@@ -401,11 +413,12 @@ export default {
       font-family: "Open Sans", sans-serif;
       line-height: 1.20;
     }
-    
+
     .newsletterTitle {
       font-size: 30px;
       font-family: "Open Sans", sans-serif;
       line-height: 1.20;
+      font-weight: 600;
     }
     
     .newsletterProductTitle {
@@ -614,6 +627,7 @@ export default {
 
       .newsletterCode {
         font-size: 20px;
+        font-weight: 600;
       }
     }
     

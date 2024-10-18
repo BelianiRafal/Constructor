@@ -67,7 +67,7 @@ const relativePriceFormat = {
   SK: {
     currency: currencies.euro,
   },
-    RO: {
+  RO: {
     currency: currencies.romanianLeu,
   },
 };

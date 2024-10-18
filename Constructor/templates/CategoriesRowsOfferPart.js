@@ -31,7 +31,10 @@ export async function CategoriesRowsOfferPart({
   type,
   categories,
   background,
+  name
 }) {
+  console.log(name);
+  
   return `
   ${Header(
     {
@@ -79,7 +82,7 @@ export async function CategoriesRowsOfferPart({
     },
     { type }
   )}
-  <table cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: ${background}; color: #000;" id="newsletter">
+  <table cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: ${background}; color: #000; max-width: 650px; width: 100%;" id="newsletter">
         <tbody>
               <tr>
                   <td align="center">
@@ -90,20 +93,27 @@ export async function CategoriesRowsOfferPart({
                   </td>
               </tr>
 
-                <tr>
-                  <td align="center" class="newsletterContainer">
-                    ${Title({
-                      align: "center",
-                      title: queries.introTitle,
-                      color: "#ffffff",
-                    })}
-                  </td>
+              <tr>
+                <td align="center">
+                  ${Space({ className: "newsletterBottom60px", is_active: name === "Newsletter 2024.11.18" })}
+                </td>
               </tr>
 
               <tr>
-                  <td align="center">
-                    ${Space({ className: "newsletterBottom20px" })}
-                  </td>
+                <td align="center" class="newsletterContainer">
+                  ${Title({
+                    align: "center",
+                    title: queries.introTitle,
+                    color: "#ffffff",
+                    className: "newsletterTitleOfferPart"
+                  })}
+                </td>
+              </tr>
+
+              <tr>
+                <td align="center">
+                  ${Space({ className: "newsletterBottom20px" })}
+                </td>
               </tr>
 
               <tr>
@@ -197,7 +207,9 @@ export async function CategoriesRowsOfferPart({
         </tbody>
       </table>
 
-      <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;" id="newsletter">
+      ${type === "newsletter" ?
+        `
+        <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;" id="newsletter">
           <tbody>
               <tr>
               <td align="left">
@@ -238,6 +250,9 @@ export async function CategoriesRowsOfferPart({
           </tr>
           </tbody>
       </table>
+        `
+        : ""
+      }
       ${Footer(
         {
           id,

@@ -13,7 +13,7 @@ export default [
       },
       {
         language: LANGUAGES.CHIT,
-        tableColumn: "Z",
+        tableColumn: "AV",
       },
       {
         language: LANGUAGES.CHFR,

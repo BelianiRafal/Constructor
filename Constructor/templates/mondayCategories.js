@@ -177,10 +177,9 @@ export async function mondayCategories({
                   <td style="background-color: ${background};">
                       ${Category({
                         href: getCategoryLink(categories[0].href),
-                        name:                           "isCategoriesDB" in categories[0] &&
-                        categories[0].isCategoriesDB
-                          ? getCategoryTitle(categories[0].name)
-                          : queries.categories[0],
+                        name: queries?.categories[0]
+                          ? queries.categories[0]
+                          : getCategoryTitle(categories[0].name),
                         src: categories[0].src,
                         cta: getPhrase("Shop now"),
                         type: "monday",
@@ -207,10 +206,9 @@ export async function mondayCategories({
                     <td style="background-color: ${background};">
                         ${Category({
                           href: getCategoryLink(categories[1].href),
-                          name: "isCategoriesDB" in categories[1] &&
-                            categories[1].isCategoriesDB
-                              ? getCategoryTitle(categories[1].name)
-                              : queries.categories[1],
+                          name: queries?.categories
+                            ? queries.categories[1]
+                            : getCategoryTitle(categories[1].name),
                           src: categories[1].src,
                           cta: getPhrase("Shop now"),
                           type: "monday",
@@ -237,10 +235,9 @@ export async function mondayCategories({
                     <td style="background-color: ${background};">
                         ${Category({
                           href: getCategoryLink(categories[2].href),
-                          name:"isCategoriesDB" in categories[2] &&
-                            categories[2].isCategoriesDB
-                              ? getCategoryTitle(categories[2].name)
-                              : queries.categories[2],
+                          name: queries?.categories
+                            ? queries.categories[2]
+                            : getCategoryTitle(categories[2].name),
                           src: categories[2].src,
                           cta: getPhrase("Shop now"),
                           type: "monday",
@@ -268,10 +265,9 @@ export async function mondayCategories({
                     <td style="background-color: ${background};">
                         ${Category({
                           href: getCategoryLink(categories[3].href),
-                          name: "isCategoriesDB" in categories[3] &&
-                            categories[3].isCategoriesDB
-                              ? getCategoryTitle(categories[3].name)
-                              : queries.categories[3],
+                          name: queries?.categories
+                            ? queries.categories[3]
+                            : getCategoryTitle(categories[3].name),
                           src: categories[3].src,
                           cta: getPhrase("Shop now"),
                           type: "monday",

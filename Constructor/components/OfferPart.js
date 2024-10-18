@@ -64,12 +64,6 @@ export function OfferPart({ offers, offerDate, href, code, type, color }) {
         ${Paragraph(offerDate, "center")}
       </td>
     </tr>
-
-    <tr>
-      <td >
-        ${Space()}
-      </td>
-    </tr>
   `;
   const landing = `
         ${offers
@@ -111,12 +105,6 @@ export function OfferPart({ offers, offerDate, href, code, type, color }) {
           <tr>
             <td >
               ${Paragraph(offerDate, "center")}
-            </td>
-          </tr>
-    
-          <tr>
-            <td >
-              ${Space()}
             </td>
           </tr>
   `;

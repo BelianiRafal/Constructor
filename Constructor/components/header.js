@@ -124,7 +124,10 @@ export function Header(sections, options) {
         const conditionalSections = {};
 
         for (const key in elem) {
-          const element = elem[key];
+          let element = elem[key];
+          if (element === undefined) {
+            element = ""
+          }
 
           if (typeof elem !== "object") {
             conditionalSections[key] = element;
@@ -142,7 +145,10 @@ export function Header(sections, options) {
         const conditionalSections = {};
 
         for (const key in elem) {
-          const element = elem[key];
+          let element = elem[key];
+          if (element === undefined) {
+            element = ""
+          }
           if (typeof elem !== "object") {
             conditionalSections[key] = element;
             continue;

@@ -63,7 +63,6 @@ export function initApp({ campaigns, shops, config }) {
   setEvents();
 
   async function render() {
-    if (!CANI) return;
     if (!getState("country")) return;
     const templateToRender = getState("template");
 
@@ -128,7 +127,7 @@ export function initApp({ campaigns, shops, config }) {
         background: templateToRender.background || "#ffffff",
         country,
         id: ids[country],
-        categories: templateToRender.categories.map((item) =>
+        categories: templateToRender.categories?.map((item) =>
           Array.isArray(item)
             ? item.map((item) => computeValue({ ...item }))
             : computeValue({ ...item })
