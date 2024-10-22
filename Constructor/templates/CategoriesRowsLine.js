@@ -208,7 +208,7 @@ export async function CategoriesRowsLine({
               ? getFooter("Delivery src")
               : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
-            exclude: ["SK", "CHIT", "SE", "NO", "FI", "BEFR", "BENL"].includes(
+            exclude: ["CHIT"].includes(
               country
             ),
           },
@@ -255,9 +255,10 @@ export async function CategoriesRowsLine({
           klarna: {
             src: getFooter("Klarna src"),
             href: getFooter("Klarna href"),
-            exclude: ["SK", "HU", "BEFR", "BENL"].includes(country),
+            exclude: ["SK", "HU", "BEFR", "BENL", "RO"].includes(country),
           },
           socials: {
+            exclude: ["RO"].includes(country),
             title: getFooter("Socials Title"),
             instagram: {
               src: getFooter("Instagram src"),

@@ -261,7 +261,7 @@ export async function CategoriesRowsOfferPart({
               ? getFooter("Delivery src")
               : getFooter("Asembly src"),
             href: getFooter("Asembly href"),
-            exclude: ["SK", "CHIT", "SE", "NO", "FI", "BEFR", "BENL"].includes(
+            exclude: ["CHIT"].includes(
               country
             ),
           },
