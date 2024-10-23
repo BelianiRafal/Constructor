@@ -6646,7 +6646,7 @@ export default [
     "home-accessories": "accesorii-pentru-casa",
     "mirrors": "",
     "accessories-decor": "",
-    "stools": "",
+    "stools": "poufuri-si-taburete",
     "bed-accessories": "",
     "showers": "",
     "bathroom-fittings": "",

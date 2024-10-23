@@ -417,7 +417,7 @@ export function Footer(sections, options) {
                                                         `
                                                         <td class="newsletterSocialIcon">
                                                             <a
-                                                                href="${Xsocial.href}">
+                                                                href="${Xsocial.href}?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
                                                                 <img loading="lazy" src="${Xsocial.src}"
                                                                     border="0" style="display:block; max-width: 100%;"
                                                                     alt="Pinterest">
@@ -432,7 +432,7 @@ export function Footer(sections, options) {
                                                         `
                                                         <td class="newsletterSocialIcon">
                                                             <a
-                                                                href="${Tiktok.href}">
+                                                                href="${Tiktok.href}?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
                                                                 <img loading="lazy" src="${Tiktok.src}"
                                                                     border="0" style="display:block; max-width: 100%;"
                                                                     alt="Pinterest">
@@ -756,10 +756,7 @@ export function Footer(sections, options) {
         const conditionalSections = {};
 
         for (const key in elem) {
-          let element = elem[key];
-          if (element === undefined) {
-            element = ""
-          }
+          const element = elem[key];
           if (typeof elem !== "object") {
             conditionalSections[key] = element;
             continue;
@@ -776,10 +773,7 @@ export function Footer(sections, options) {
         const conditionalSections = {};
 
         for (const key in elem) {
-          let element = elem[key];
-          if (element === undefined) {
-            element = ""
-          }
+          const element = elem[key];
           if (typeof elem !== "object") {
             conditionalSections[key] = element;
             continue;

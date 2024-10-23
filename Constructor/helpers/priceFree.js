@@ -22,6 +22,7 @@ const free = {
   CZ: "ZDARMA",
   SK: "GRÁTIS",
   HU: "AJÁNDÉK",
+  RO: "CADOU",
 }
 
 export function priceFree(product) {
