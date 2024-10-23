@@ -1050,6 +1050,14 @@ export default {
           #newsletter .newsletterTitle {
             font-size: 30px;
             line-height: 1.20;
+            font-weight: 600;
+          }
+
+          #newsletter .newsletterIntroTitle {
+            font-size: 35px;
+            font-family: "Open Sans", sans-serif;
+            line-height: 1.20;
+            font-weight: 600;
           }
 
           #newsletter .newsletterTitleOfferPart {
@@ -1184,6 +1192,10 @@ export default {
           
             #newsletter .newsletterFooterTitle {
               font-size: 18px;
+            }
+
+            #newsletter .newsletterIntroTitle {
+              font-size: 28px;
             }
           
             #newsletter .newsletterProductTitleFreebie {
