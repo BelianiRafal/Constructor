@@ -1224,7 +1224,7 @@ export default [
     "Asembly src": "https://upload.pictureserver.net/static/2024/ro_bottom_sa.png",
     "Delivery src": "",
     "Asembly href": "http://www.beliani.ro/content/sustenabilitate/",
-    "Title": "Vezi mii de altele",
+    "Title": "Vezi mai multe",
     "Category src 1": "https://upload.pictureserver.net/static/2024/ro_cat_01.png",
     "Category src 2": "https://upload.pictureserver.net/static/2024/ro_cat_02.png",
     "Category src 3": "https://upload.pictureserver.net/static/2024/ro_cat_03.png",

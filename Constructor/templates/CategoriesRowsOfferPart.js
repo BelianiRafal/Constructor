@@ -33,7 +33,6 @@ export async function CategoriesRowsOfferPart({
   background,
   name
 }) {
-  console.log(name);
   
   return `
   ${Header(
@@ -95,7 +94,8 @@ export async function CategoriesRowsOfferPart({
 
               <tr>
                 <td align="center">
-                  ${Space({ className: "newsletterBottom60px", is_active: name === "Newsletter 2024.11.18" })}
+                  ${Space({ className: "newsletterBottom60px", is_active: name === "Newsletter 2024.11.18" || name === "Landing 2024.11.18" })}
+                  ${Space({ className: "newsletterBottom35px", is_active: name === "Newsletter 2024.11.25" || name === "Landing 2024.11.25" })}
                 </td>
               </tr>
 
@@ -161,54 +161,39 @@ export async function CategoriesRowsOfferPart({
                   })}
                 </td>
               </tr>
+              <tr>
+                <td>
+                  ${Space()}
+                </td>
+              </tr>
           </tbody>
       </table>
     <table cellspacing="0" cellpadding="0" border="0" align="center" id="newsletter" style="max-width: 650px;" width="100%">
         <tbody>
             ${categories
               .map((item, idx) => {
-                if (idx === categories.length - 1) {
-                  return `
-                  <tr>
-                <td class="newsletterContainer" style="background-color: ${background}; color: #000;">
-                  ${Category({
-                    type: "no_products",
-                    name: getCategoryTitle(item.name),
-                    href: getCategoryLink(item.href),
-                    src: item.src,
-                    color: item.color,
-                    cta: getPhrase("Shop now"),
-                  })}
-                  ${Space()}
-                </td>
-              </tr>
-                  `;
-                }
                 return `
-              <tr>
-                <td class="newsletterContainer" style="background-color: ${background}; color: #000;">
-              ${Category({
-                type: "no_products",
-                name: getCategoryTitle(item.name),
-                href: getCategoryLink(item.href),
-                src: item.src,
-                color: item.color,
-                cta: getPhrase("Shop now"),
-              })}
-              ${Space()}
-              ${Line(
-                "https://upload.pictureserver.net/static/2024/white_line.jpg"
-              )}
-              </td>
-            </tr>
-              `;
+                  <tr>
+                    <td class="newsletterContainer" style="background-color: ${background}; color: #000;">
+                      ${Category({
+                        len: categories.length - 1,
+                        idx: idx,
+                        type: item?.type,
+                        name: getCategoryTitle(item.name),
+                        href: getCategoryLink(item.href),
+                        src: item.src,
+                        color: item.color,
+                        cta: getPhrase("Shop now"),
+                        line: "https://upload.pictureserver.net/static/2024/white_line.jpg"
+                      })}
+                    </td>
+                  </tr>
+                  `;
               })
               .join("")}
         </tbody>
       </table>
 
-      ${type === "newsletter" ?
-        `
         <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;" id="newsletter">
           <tbody>
               <tr>
@@ -250,9 +235,7 @@ export async function CategoriesRowsOfferPart({
           </tr>
           </tbody>
       </table>
-        `
-        : ""
-      }
+
       ${Footer(
         {
           id,

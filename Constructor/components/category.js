@@ -1,5 +1,5 @@
 import { isAllowToRender } from "../helpers/optimizeImage.js";
-import { ImageWithLink, Product, Title } from "./index.js";
+import { ImageWithLink, Line, Product, Space, Title } from "./index.js";
 
 export const Category = isAllowToRender(
   ({
@@ -9,6 +9,9 @@ export const Category = isAllowToRender(
     products,
     ctaComponent,
     color,
+    line,
+    len,
+    idx,
     cta = "CTA",
     type = "monday",
   }) => {
@@ -17,6 +20,53 @@ export const Category = isAllowToRender(
     }
 
     if (type === "no_products") {
+      if (idx === len) {
+        return `
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+      <tbody>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
+        <tr>
+          <td>
+            ${Title({ title: name, align: "left", color: color })}
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="${href}">
+              <img alt="${name}" src="${src}" style="vertical-align: middle; max-width: 100%;" loading="lazy">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
+        <tr>
+          <td align="center">
+            ${
+              ctaComponent
+                ? ctaComponent(href, cta)
+                : `
+                <a href="${href}" style="color:${
+                    color || "#000"
+                  }; text-decoration: underline;">
+                  <span class="newsletterCta">${cta}</span>
+                </a>
+              `
+            }
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
+      </tbody>
+    </table>
+        `;
+      }
       return `
     <table border="0" cellspacing="0" cellpadding="0" width="100%">
       <tbody>
@@ -54,6 +104,14 @@ export const Category = isAllowToRender(
                 </a>
               `
             }
+          </td>
+        </tr>
+        <tr>
+          <td class="newsletterBottom35px"></td>
+        </tr>
+        <tr>
+          <td>
+              ${Line(line)}
           </td>
         </tr>
       </tbody>
@@ -172,17 +230,45 @@ export const Category = isAllowToRender(
     }
 
     if (type === "image") {
+      if (idx === len) {
+        return `
+        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+          <thead>
+            <tr>
+              <td>
+                ${ImageWithLink({ href: href, src: src, alt: name })}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  ${Space({className: "newsletterBottom20px"})}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  ${Line(line)}
+              </td>
+            </tr>
+          </thead>
+        </table>
+        `;
+      }
       return `
-    <table cellspacing="0" cellpadding="0" border="0" width="100%">
-      <thead>
-        <tr>
-          <td>
-            ${ImageWithLink({ href: href, src: src, alt: name })}
-          </td>
-        </tr>
-      </thead>
-    </table>
-    `;
+      <table cellspacing="0" cellpadding="0" border="0" width="100%">
+        <thead>
+          <tr>
+            <td>
+              ${ImageWithLink({ href: href, src: src, alt: name })}
+            </td>
+          </tr>
+            <tr>
+              <td>
+                ${Space({className: "newsletterBottom20px"})}
+              </td>
+            </tr>
+        </thead>
+      </table>
+      `;
     }
   }
 );

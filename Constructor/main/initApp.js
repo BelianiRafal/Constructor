@@ -195,17 +195,16 @@ export function initApp({ campaigns, shops, config }) {
       } catch (error) {
         console.log(error);
         Toastify({
-          text: "NEW Products parse error: " + error.message,
+          text: "Products parse error: " + error.message,
           escapeMarkup: false,
           duration: 3000,
         }).showToast();
       }
 
       const selectedCampaign = getState("selectedCampaign");
+      const prev = localStorage.getItem("products");
       try {
-        const prev = localStorage.getItem("products");
         const prevProducts = prev ? JSON.parse(prev) : [];
-
         const isProductsSetted = prevProducts.find(
           (item) => item.campaign_id === selectedCampaign.startId
         );
@@ -222,30 +221,24 @@ export function initApp({ campaigns, shops, config }) {
             }
             return item;
           });
-          localStorage.setItem(
-            "products",
-            JSON.stringify([...updatedProducts])
-          );
-        } else {
           try {
-            localStorage.setItem(
-              "products",
-              JSON.stringify([
-                ...prevProducts,
-                {
-                  campaign_id: selectedCampaign.startId,
-                  products: normalizedProducts,
-                },
-              ])
-            );
+            localStorage.setItem("products", JSON.stringify(updatedProducts));
+            Toastify({
+              text: "Products successfully saved.",
+              escapeMarkup: false,
+              duration: 3000,
+            }).showToast();
           } catch (error) {
             const quotaExceededError = isQuotaExceededError(error);
             if (quotaExceededError) {
               const ids = prevProducts.map((item) => item.campaign_id);
               const deleteCampaignId = prompt(
-                "Memory exceeded, please enter campaign_id to delete: " +
+                "Memory exceeded, please enter startId to delete: " +
                   ids.join(",")
               );
+              if (!deleteCampaignId) {
+                return;
+              }
               if (!ids.includes(deleteCampaignId)) {
                 Toastify({
                   text: "Co robisz?!?",
@@ -268,21 +261,67 @@ export function initApp({ campaigns, shops, config }) {
                 ])
               );
               Toastify({
-                text: "Memory exceeded error: " + error.message,
+                text: "Products successfully saved.",
                 escapeMarkup: false,
                 duration: 3000,
               }).showToast();
               return;
             }
           }
-          throw error;
+          return;
+        } else {
+          try {
+            localStorage.setItem(
+              "products",
+              JSON.stringify([
+                ...prevProducts,
+                {
+                  campaign_id: selectedCampaign.startId,
+                  products: normalizedProducts,
+                },
+              ])
+            );
+          } catch (error) {
+            const quotaExceededError = isQuotaExceededError(error);
+            if (quotaExceededError) {
+              const ids = prevProducts.map((item) => item.campaign_id);
+              const deleteCampaignId = prompt(
+                "Memory exceeded, please enter startId to delete: " +
+                  ids.join(",")
+              );
+              if (!deleteCampaignId) {
+                return;
+              }
+              if (!ids.includes(deleteCampaignId)) {
+                Toastify({
+                  text: "Co robisz?!?",
+                  escapeMarkup: false,
+                  duration: 3000,
+                }).showToast();
+                return;
+              }
+              const prevCampaigns = prevProducts.filter(
+                (item) => item.campaign_id !== deleteCampaignId
+              );
+              localStorage.setItem(
+                "products",
+                JSON.stringify([
+                  ...prevCampaigns,
+                  {
+                    campaign_id: selectedCampaign.startId,
+                    products: normalizedProducts,
+                  },
+                ])
+              );
+              Toastify({
+                text: "Products successfully saved.",
+                escapeMarkup: false,
+                duration: 3000,
+              }).showToast();
+              return;
+            }
+          }
         }
-
-        Toastify({
-          text: "Products successfully saved.",
-          escapeMarkup: false,
-          duration: 3000,
-        }).showToast();
       } catch (error) {
         Toastify({
           text: "Products error: " + error.message,

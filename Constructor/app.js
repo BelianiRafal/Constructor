@@ -7503,7 +7503,7 @@ initApp({
       isArchive: false,
       optimizeImg: false,
       figmaUrl:
-        "https://www.figma.com/design/3utl7MvKIVm75rG6exxhqO/2024.11.04--Reading-corner?node-id=6057-1504&node-type=frame&t=VffLu5E2M985f29e-0",
+        "https://www.figma.com/design/9qfDAX9DgN9wV34RRwe0eh/2024.11.04--Reading-corner-(Copy)?t=yNIIgFIeN6nHsC9d-0",
       templates: [
         {
           name: "Newsletter",
@@ -7701,6 +7701,12 @@ initApp({
             {
               tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
               tableName: "Voucher - 04.11.24-Reading corner!",
+              tableRange: "24",
+              name: "code",
+            },
+            {
+              tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+              tableName: "Voucher - 04.11.24-Reading corner!",
               tableRange: "29:32",
               name: "categories",
             },
@@ -7767,173 +7773,107 @@ initApp({
           type: types.LANDINGPAGE,
           template: mondayOfferFreeebiesLines,
           css: types.CSS.LP,
-          background: "#e8e8e8",
+          background: "#F6E7E6",
+          intro: {
+            background: "#F6E7E6",
+          },
+          offerPart: {
+            type: "code",
+          },
           categories: [
             {
-              name: "Boho",
-              src: "https://upload.pictureserver.net/static/2024/20240826Category1.png",
-              href: {
-                CHDE: "https://www.beliani.ch/wohnzimmer-moebel/alle+produkte/looks/?Stil=Boho&sort=default",
-                CHFR: "https://www.beliani.ch/meubles-de-salon/tous+les+produits/?Style=Boho",
-                DE: "https://www.beliani.de/wohnzimmer-moebel/alle+produkte/looks/?Stil=Boho&sort=default",
-                UK: "https://www.beliani.co.uk/living-room-furniture/all+products/?Style=Boho",
-                FR: "https://www.beliani.fr/meubles-de-salon/tous+les+produits/?Style=Boho",
-                AT: "https://www.beliani.at/wohnzimmer-moebel/alle+produkte/looks/?Stil=Boho&sort=default",
-                ES: "https://www.beliani.es/salon/todos+los+productos/?Estilo=Boho",
-                PL: "https://www.beliani.pl/meble-do-salonu/wszystkie+produkty/looks/?Styl=Boho&sort=default",
-                NL: "https://www.beliani.nl/woonkamer/alle+producten/?Stijl=Boho",
-                IT: "https://www.beliani.it/soggiorno/tutti+i+prodotti/?Stile=Boho&sort=default",
-                PT: "https://www.beliani.pt/sala/todos+os+produtos/?Estilo=Boho&sort=default",
-                SE: "https://www.beliani.se/vardagsrumsmobler/alla+produkter/?Stil=Boho",
-                HU: "https://www.beliani.hu/nappali-butorok/minden+termek/?Stilus=Boho&sort=default",
-                DK: "https://www.beliani.dk/stuemobler/alle+produkter/?Stil=Boho&sort=default",
-                CZ: "https://www.beliani.cz/nabytek-do-obyvaku/vsechny+produkty/?Styl=Boho",
-                FI: "https://www.beliani.fi/olohuoneen-kalusteet/kaikki+tuotteet/?Tyyli=Boho&sort=default",
-                NO: "https://www.beliani.no/stuemoebler/alle+produkter/?Stil=Boho&sort=default",
-                SK: "https://www.beliani.sk/nabytok-do-obyvacky/zobrazit+vsetky+produkty/?Styl=Boho&sort=default",
-              },
+              name: "Armchairs",
+              background: "#F6E7E6",
+              src: "https://upload.pictureserver.net/static/2024/20241104Category1.png",
+              href: "https://www.beliani.ch/armchairs/",
               products: [
                 {
-                  id: "306283",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Category11.png",
+                  id: "397576",
+                  src: "https://upload.pictureserver.net/static/2024/20241104Category11.png",
                 },
                 {
-                  id: "354635",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Category12.png",
+                  id: "516830",
+                  src: "https://upload.pictureserver.net/static/2024/20241104Category12.png",
                 },
                 {
-                  id: "331882",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Category13.png",
+                  id: "410138",
+                  src: "https://upload.pictureserver.net/static/2024/20241104Category13.png",
                 },
                 {
-                  id: "136600",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Category14.png",
+                  id: "442671",
+                  src: "https://upload.pictureserver.net/static/2024/20241104Category14.png",
                 },
               ],
             },
             {
-              name: "Traditional",
-              src: "https://upload.pictureserver.net/static/2024/20240826Category2.png",
-              href: {
-                CHDE: "https://www.beliani.ch/wohnzimmer-moebel/alle+produkte/looks/?Stil=Klassisch&sort=default",
-                CHFR: "https://www.beliani.ch/meubles-de-salon/tous+les+produits/?Style=Traditionnel",
-                DE: "https://www.beliani.de/wohnzimmer-moebel/alle+produkte/looks/?Stil=Klassisch&sort=default",
-                UK: "https://www.beliani.co.uk/living-room-furniture/all+products/?Style=Traditional&sort=default",
-                FR: "https://www.beliani.fr/meubles-de-salon/tous+les+produits/?Style=Traditionnel",
-                AT: "https://www.beliani.at/wohnzimmer-moebel/alle+produkte/looks/?Stil=Klassisch&sort=default",
-                ES: "https://www.beliani.es/salon/todos+los+productos/?Estilo=Tradicional",
-                PL: "https://www.beliani.pl/meble-do-salonu/wszystkie+produkty/looks/?Styl=Klasyczny&sort=default",
-                NL: "https://www.beliani.nl/woonkamer/alle+producten/?Stijl=Traditioneel",
-                IT: "https://www.beliani.it/soggiorno/tutti+i+prodotti/?Stile=Classico&sort=default",
-                PT: "https://www.beliani.pt/sala/todos+os+produtos/?Estilo=Tradicional&sort=default",
-                SE: "https://www.beliani.se/vardagsrumsmobler/alla+produkter/?Stil=Traditionell&sort=default",
-                HU: "https://www.beliani.hu/nappali-butorok/minden+termek/?Stilus=Klasszikus&sort=default",
-                DK: "https://www.beliani.dk/stuemobler/alle+produkter/?Stil=Traditionel&sort=default ",
-                CZ: "https://www.beliani.cz/nabytek-do-obyvaku/vsechny+produkty/?Styl=Tradicni",
-                FI: "https://www.beliani.fi/olohuoneen-kalusteet/kaikki+tuotteet/?Tyyli=Perinteinen&sort=default",
-                NO: "https://www.beliani.no/stuemoebler/alle+produkter/?Stil=Klassisk&sort=default",
-                SK: "https://www.beliani.sk/nabytok-do-obyvacky/zobrazit+vsetky+produkty/?Styl=Tradicny&sort=default",
-              },
+              name: "Bookcases and shelves",
+              background: "#FFCCB7",
+              src: "https://upload.pictureserver.net/static/2024/20241104Category2.png",
+              href: "https://www.beliani.ch/storage/bookcases-and-shelves/",
               products: [
                 {
-                  id: "164877",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Category21.png",
+                  id: "30129",
+                  src: "https://upload.pictureserver.net/static/2024/20241104Category21.png",
                 },
                 {
-                  id: "114242",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Category22.png",
+                  id: "321957",
+                  src: "https://upload.pictureserver.net/static/2024/20241104Category22.png",
                 },
                 {
-                  id: "135510",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Category23.png",
+                  id: "112799",
+                  src: "https://upload.pictureserver.net/static/2024/20241104Category23.png",
                 },
                 {
-                  id: "63322",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Category24.png",
+                  id: "95675",
+                  src: "https://upload.pictureserver.net/static/2024/20241104Category24.png",
                 },
               ],
             },
             {
-              name: "Industrial",
-              src: "https://upload.pictureserver.net/static/2024/20240826Category3.png",
-              href: {
-                CHDE: "https://www.beliani.ch/wohnzimmer-moebel/alle+produkte/looks/?Stil=Industriell&sort=default",
-                CHFR: "https://www.beliani.ch/meubles-de-salon/tous+les+produits/?Style=Industriel",
-                DE: "https://www.beliani.de/wohnzimmer-moebel/alle+produkte/looks/?Stil=Industriell&sort=default",
-                UK: "https://www.beliani.co.uk/living-room-furniture/all+products/?Style=Industrial&sort=default",
-                FR: "https://www.beliani.fr/meubles-de-salon/tous+les+produits/?Style=Industriel",
-                AT: "https://www.beliani.at/wohnzimmer-moebel/alle+produkte/looks/?Stil=Industriell&sort=default",
-                ES: "https://www.beliani.es/salon/todos+los+productos/?Estilo=Industrial",
-                PL: "https://www.beliani.pl/meble-do-salonu/wszystkie+produkty/looks/?Styl=Industrialny&sort=default",
-                NL: "https://www.beliani.nl/woonkamer/alle+producten/?Stijl=Industrieel",
-                IT: "https://www.beliani.it/soggiorno/tutti+i+prodotti/?Stile=Industriale&sort=default",
-                PT: "https://www.beliani.pt/sala/todos+os+produtos/?Estilo=Industrial&sort=default",
-                SE: "https://www.beliani.se/vardagsrumsmobler/alla+produkter/?Stil=Industriell&sort=default",
-                HU: "https://www.beliani.hu/nappali-butorok/minden+termek/?Stilus=Ipari&sort=default",
-                DK: "https://www.beliani.dk/stuemobler/alle+produkter/?Stil=Industriel&sort=default ",
-                CZ: "https://www.beliani.cz/nabytek-do-obyvaku/vsechny+produkty/?Styl=Prumyslovy",
-                FI: "https://www.beliani.fi/olohuoneen-kalusteet/kaikki+tuotteet/?Tyyli=Industriaalinen&sort=default",
-                NO: "https://www.beliani.no/stuemoebler/alle+produkter/?Stil=Industriell&sort=default",
-                SK: "https://www.beliani.sk/nabytok-do-obyvacky/zobrazit+vsetky+produkty/?Styl=Industrialny&sort=default",
-              },
+              name: "Blankets & throws",
+              background: "#F6E7E6",
+              src: "https://upload.pictureserver.net/static/2024/20241104Category3.png",
+              href: "https://www.beliani.ch/textiles/blankets-and-throws/",
               products: [
                 {
-                  id: "189717",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Category31.png",
+                  id: "351104",
+                  src: "https://upload.pictureserver.net/static/2024/20241104Category31.png",
                 },
                 {
-                  id: "374306",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Category32.png",
+                  id: "338669",
+                  src: "https://upload.pictureserver.net/static/2024/20241104Category32.png",
                 },
                 {
-                  id: "365707",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Category33.png",
+                  id: "351573",
+                  src: "https://upload.pictureserver.net/static/2024/20241104Category33.png",
                 },
                 {
-                  id: "180714",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Category34.png",
+                  id: "338436",
+                  src: "https://upload.pictureserver.net/static/2024/20241104Category34.png",
                 },
               ],
             },
             {
-              name: "Retro",
-              src: "https://upload.pictureserver.net/static/2024/20240826Category4.png",
-              href: {
-                CHDE: "https://www.beliani.ch/wohnzimmer-moebel/alle+produkte/looks/?Stil=Retro&sort=default",
-                CHFR: "https://www.beliani.ch/meubles-de-salon/tous+les+produits/?Style=Retro",
-                DE: "https://www.beliani.de/wohnzimmer-moebel/alle+produkte/looks/?Stil=Retro&sort=default",
-                UK: "https://www.beliani.co.uk/living-room-furniture/all+products/?Style=Retro&sort=default",
-                FR: "https://www.beliani.fr/meubles-de-salon/tous+les+produits/?Style=Retro",
-                AT: "https://www.beliani.at/wohnzimmer-moebel/alle+produkte/looks/?Stil=Retro&sort=default",
-                ES: "https://www.beliani.es/salon/todos+los+productos/?Estilo=Retro",
-                PL: "https://www.beliani.pl/meble-do-salonu/wszystkie+produkty/looks/?Styl=Retro&sort=default",
-                NL: "https://www.beliani.nl/woonkamer/alle+producten/?Stijl=Retro",
-                IT: "https://www.beliani.it/soggiorno/tutti+i+prodotti/?Stile=Retro&sort=default",
-                PT: "https://www.beliani.pt/sala/todos+os+produtos/?Estilo=Retro&sort=default",
-                SE: "https://www.beliani.se/vardagsrumsmobler/alla+produkter/?Stil=Retro&sort=default",
-                HU: "https://www.beliani.hu/nappali-butorok/minden+termek/?Stilus=Retro&sort=default",
-                DK: "https://www.beliani.dk/stuemobler/alle+produkter/?Stil=Retro&sort=default ",
-                CZ: "https://www.beliani.cz/nabytek-do-obyvaku/vsechny+produkty/?Styl=Retro",
-                FI: "https://www.beliani.fi/olohuoneen-kalusteet/kaikki+tuotteet/?Tyyli=Retro&sort=default",
-                NO: "https://www.beliani.no/stuemoebler/alle+produkter/?Stil=Retro&sort=default",
-                SK: "https://www.beliani.sk/nabytok-do-obyvacky/zobrazit+vsetky+produkty/?Styl=Retro&sort=default",
-              },
+              name: "Floor lamps",
+              background: "#FFCCB7",
+              src: "https://upload.pictureserver.net/static/2024/20241104Category4.png",
+              href: "https://www.beliani.ch/lighting/floor-lamps/",
               products: [
                 {
-                  id: "454066",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Category41.png",
+                  id: "447861",
+                  src: "https://upload.pictureserver.net/static/2024/20241104Category41.png",
                 },
                 {
-                  id: "328733",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Category42.png",
+                  id: "168282",
+                  src: "https://upload.pictureserver.net/static/2024/20241104Category42.png",
                 },
                 {
-                  id: "357566",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Category43.png",
+                  id: "416610",
+                  src: "https://upload.pictureserver.net/static/2024/20241104Category43.png",
                 },
                 {
-                  id: "354707",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Category44.png",
+                  id: "323638",
+                  src: "https://upload.pictureserver.net/static/2024/20241104Category44.png",
                 },
               ],
             },
@@ -7945,7 +7885,7 @@ initApp({
                 type: "relation",
                 relyOn: "origin",
                 placeholderPosition: "0",
-                value: "content/lp24-08-26",
+                value: "content/lp24-11-04",
               },
             },
             {
@@ -7954,7 +7894,7 @@ initApp({
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2024/20240826_01.jpg",
+                  "https://upload.pictureserver.net/static/2024/20241104_01.png",
               },
             },
             {
@@ -7963,12 +7903,12 @@ initApp({
                 type: "relation",
                 relyOn: "origin",
                 placeholderPosition: "0",
-                value: "content/lp24-08-26",
+                value: "content/lp24-11-04",
               },
             },
             {
               value:
-                "https://upload.pictureserver.net/static/2024/20240826TopImage.png",
+                "https://upload.pictureserver.net/static/2024/20241104gif.gif",
             },
             {
               query: true,
@@ -7976,7 +7916,7 @@ initApp({
                 type: "relation",
                 relyOn: "origin",
                 placeholderPosition: "0",
-                value: "content/lp24-08-16",
+                value: "content/lp24-10-24",
               },
             },
             {
@@ -7985,7 +7925,7 @@ initApp({
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2024/20240816b.png",
+                  "https://upload.pictureserver.net/static/2024/20241024b.png",
               },
             },
             {
@@ -7994,7 +7934,7 @@ initApp({
                 type: "relation",
                 relyOn: "origin",
                 placeholderPosition: "0",
-                value: "content/lp24-08-15",
+                value: "content/lp24-10-23",
               },
             },
             {
@@ -8003,141 +7943,92 @@ initApp({
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2024/20240815b.png",
+                  "https://upload.pictureserver.net/static/2024/20241023b.png",
               },
             },
           ],
           tableQueries: [
             {
               tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-              tableName: "26.08.24-CushionPyramid!",
-              tableRange: "20:23",
+              tableName: "Voucher - 04.11.24-Reading corner!",
+              tableRange: "20:22",
               name: "offerPart",
             },
             {
               tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-              tableName: "26.08.24-CushionPyramid!",
-              tableRange: "26",
-              name: "codes",
-            },
-            {
-              tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-              tableName: "26.08.24-CushionPyramid!",
-              tableRange: "28:29",
+              tableName: "Voucher - 04.11.24-Reading corner!",
+              tableRange: "27:28",
               name: "intro",
             },
             {
               tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-              tableName: "26.08.24-CushionPyramid!",
-              tableRange: "30:33",
+              tableName: "Voucher - 04.11.24-Reading corner!",
+              tableRange: "24",
+              name: "code",
+            },
+            {
+              tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+              tableName: "Voucher - 04.11.24-Reading corner!",
+              tableRange: "29:32",
               name: "categories",
             },
             {
               tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-              tableName: "26.08.24-CushionPyramid!",
-              tableRange: "41:43",
+              tableName: "Voucher - 04.11.24-Reading corner!",
+              tableRange: "37:39",
               name: "condition",
             },
-            {
-              tableId: "1nY4WvP88r6uL5f89oc8Xp7wZwuerBnQii_ZIIm7BMBk",
-              tableName: "Templates",
-              tableRange: "?majorDimension=COLUMNS",
-              name: "templates",
-              tableColumns: false,
-            },
-            {
-              tableId: "1HPEr1vRHkVPJ5lp0mUbSPsOoiUnWTEQKiSiL9BWiDg4",
-              tableName: "Categories",
-              tableRange: "?majorDimension=COLUMNS",
-              name: "categories",
-              tableColumns: false,
-            },
-            {
-              tableId: "1Q1tgnXS3vV8tUnTgbuw0rFE6BqqfIRg8lylQ7N2v6KU",
-              tableName: "Header",
-              tableRange: "?majorDimension=COLUMNS",
-              name: "header",
-              tableColumns: false,
-            },
-            {
-              tableId: "1IrbxxgxlXKpr22uSfC1VVqFeNH2bZaMcSe0FW2pAu8M",
-              tableName: "Footer",
-              tableRange: "?majorDimension=COLUMNS",
-              name: "footer",
-              tableColumns: false,
-            },
           ],
-          freebies: [
-            {
-              size: {
-                row: 1,
-                col: 3,
+          freebies: {
+            items: [
+              {
+                size: {
+                  row: 1,
+                  col: 3,
+                },
+                products: [
+                  {
+                    id: "307536",
+                    src: "https://upload.pictureserver.net/static/2024/20241104Freebie1.png",
+                    style: "padding-right: 10px; padding-left: 10px;",
+                  },
+                  {
+                    id: "307374",
+                    src: "https://upload.pictureserver.net/static/2024/20241104Freebie2.png",
+                    style: "padding-right: 10px; padding-left: 10px;",
+                  },
+                  {
+                    id: "189188",
+                    src: "https://upload.pictureserver.net/static/2024/20241104Freebie3.png",
+                    style: "padding-right: 10px; padding-left: 10px;",
+                  },
+                ],
               },
-              products: [
-                {
-                  id: "290154",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Freebie1.png",
-                  style: "padding-right: 10px; padding-left: 10px;",
+              {
+                size: {
+                  row: 1,
+                  col: 3,
                 },
-                {
-                  id: "291415",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Freebie2.png",
-                  style: "padding-right: 10px; padding-left: 10px;",
-                },
-                {
-                  id: "257972",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Freebie3.png",
-                  style: "padding-right: 10px; padding-left: 10px;",
-                },
-              ],
-            },
-            {
-              size: {
-                row: 1,
-                col: 3,
+                products: [
+                  {
+                    id: "256777",
+                    src: "https://upload.pictureserver.net/static/2024/20241104Freebie4.png",
+                    style: "padding-right: 10px; padding-left: 10px;",
+                  },
+                  {
+                    id: "256852",
+                    src: "https://upload.pictureserver.net/static/2024/20241104Freebie5.png",
+                    style: "padding-left: 10px; padding-right: 10px;",
+                  },
+                  {
+                    id: "291368",
+                    src: "https://upload.pictureserver.net/static/2024/20241104Freebie6.png",
+                    style: "padding-left: 10px; padding-right: 10px;",
+                  },
+                ],
               },
-              products: [
-                {
-                  id: "256863",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Freebie4.png",
-                  style: "padding-right: 10px; padding-left: 10px;",
-                },
-                {
-                  id: "257987",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Freebie5.png",
-                  style: "padding-left: 10px; padding-right: 10px;",
-                },
-                {
-                  id: "188952",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Freebie6.png",
-                  style: "padding-left: 10px; padding-right: 10px;",
-                },
-              ],
-            },
-            {
-              size: {
-                row: 1,
-                col: 3,
-              },
-              products: [
-                {
-                  id: "307932",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Freebie7.png",
-                  style: "padding-right: 10px; padding-left: 10px;",
-                },
-                {
-                  id: "256767",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Freebie8.png",
-                  style: "padding-left: 10px; padding-right: 10px;",
-                },
-                {
-                  id: "291211",
-                  src: "https://upload.pictureserver.net/static/2024/20240826Freebie9.png",
-                  style: "padding-left: 10px; padding-right: 10px;",
-                },
-              ],
-            },
-          ],
+            ],
+          },
         },
       ],
     }),
@@ -8163,6 +8054,7 @@ initApp({
           background: "#000000",
           categories: [
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8175,6 +8067,7 @@ initApp({
               name: "Sofas",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8187,6 +8080,7 @@ initApp({
               name: "Beds",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8199,6 +8093,7 @@ initApp({
               name: "Armchairs",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8211,6 +8106,7 @@ initApp({
               name: "Chairs",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8223,6 +8119,7 @@ initApp({
               name: "Tables",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8235,6 +8132,7 @@ initApp({
               name: "Storage",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8247,6 +8145,7 @@ initApp({
               name: "Textiles",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8259,6 +8158,7 @@ initApp({
               name: "Lighting",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8271,6 +8171,7 @@ initApp({
               name: "Bathtubs",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8283,6 +8184,7 @@ initApp({
               name: "Desks",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8295,6 +8197,7 @@ initApp({
               name: "Rugs",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8423,6 +8326,7 @@ initApp({
           background: "#000000",
           categories: [
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8435,6 +8339,7 @@ initApp({
               name: "Sofas",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8447,6 +8352,7 @@ initApp({
               name: "Beds",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8459,6 +8365,7 @@ initApp({
               name: "Armchairs",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8471,6 +8378,7 @@ initApp({
               name: "Chairs",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8483,6 +8391,7 @@ initApp({
               name: "Tables",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8495,6 +8404,7 @@ initApp({
               name: "Storage",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8507,6 +8417,7 @@ initApp({
               name: "Textiles",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8519,6 +8430,7 @@ initApp({
               name: "Lighting",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8531,6 +8443,7 @@ initApp({
               name: "Bathtubs",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8543,6 +8456,7 @@ initApp({
               name: "Desks",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8555,6 +8469,7 @@ initApp({
               name: "Rugs",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8684,8 +8599,8 @@ initApp({
       date: "2024.11.18",
       issueCardId: "311561",
       alarm: {
-        isActive: false,
-        description: "",
+        isActive: true,
+        description: "Add soonending banners",
       },
       isArchive: false,
       optimizeImg: false,
@@ -8697,9 +8612,11 @@ initApp({
           type: types.NEWSLETTER,
           template: CategoriesRowsOfferPart,
           css: types.CSS.NS_BLACK_WEEK,
+          wrapper: types.WRAPPER,
           background: "#000000",
           categories: [
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8712,6 +8629,7 @@ initApp({
               name: "Living room",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8724,6 +8642,7 @@ initApp({
               name: "Dining room",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8736,6 +8655,7 @@ initApp({
               name: "Bedroom",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8748,6 +8668,7 @@ initApp({
               name: "Hallway",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8760,6 +8681,7 @@ initApp({
               name: "Office",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8772,6 +8694,7 @@ initApp({
               name: "Bathroom",
             },
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
@@ -8784,7 +8707,6 @@ initApp({
               name: "Kids",
             },
           ],
-          wrapper: types.WRAPPER,
           links: [
             {
               query: true,
@@ -8889,154 +8811,586 @@ initApp({
           ],
         },
         {
-          name: "Landing",
+          name: "Landing 2024.11.18",
           type: types.LANDINGPAGE,
           template: CategoriesRowsOfferPart,
           background: "#000000",
+          css: types.CSS.LP_BLACK_WEEK,
           categories: [
             {
+              type: "no_products",
               color: "#ffffff",
               src: {
                 type: "relation",
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241111Category1.png",
+                  "https://upload.pictureserver.net/static/2024/20241118Category1.png",
+              },
+              href: "https://www.beliani.ch/living-room-furniture/",
+              name: "Living room",
+            },
+            {
+              type: "no_products",
+              color: "#ffffff",
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241118Category2.png",
+              },
+              href: "https://www.beliani.ch/dining-room-furniture/",
+              name: "Dining room",
+            },
+            {
+              type: "no_products",
+              color: "#ffffff",
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241118Category3.png",
+              },
+              href: "https://www.beliani.ch/bedroom-furniture/",
+              name: "Bedroom",
+            },
+            {
+              type: "no_products",
+              color: "#ffffff",
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241118Category4.png",
+              },
+              href: "https://www.beliani.ch/hallway/",
+              name: "Hallway",
+            },
+            {
+              type: "no_products",
+              color: "#ffffff",
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241118Category5.png",
+              },
+              href: "https://www.beliani.ch/office-furniture/",
+              name: "Office",
+            },
+            {
+              type: "no_products",
+              color: "#ffffff",
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241118Category6.png",
+              },
+              href: "https://www.beliani.ch/bathroom-furniture/",
+              name: "Bathroom",
+            },
+            {
+              type: "no_products",
+              color: "#ffffff",
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241118Category7.png",
+              },
+              href: "https://www.beliani.ch/children-room/",
+              name: "Kids",
+            },
+          ],
+          links: [
+            {
+              query: true,
+              href: {
+                type: "relation",
+                relyOn: "origin",
+                placeholderPosition: "0",
+                value: "content/lp24-11-18",
+              },
+            },
+            {
+              value:
+                "https://upload.pictureserver.net/static/2024/20241118gif.gif",
+            },
+            {
+              query: true,
+              href: {
+                type: "relation",
+                relyOn: "origin",
+                placeholderPosition: "0",
+                value: "content/lp24-11-08",
+              },
+            },
+            {
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241108b.png",
+              },
+            },
+            {
+              query: true,
+              href: {
+                type: "relation",
+                relyOn: "origin",
+                placeholderPosition: "0",
+                value: "content/lp24-11-07",
+              },
+            },
+            {
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241107b.png",
+              },
+            },
+          ],
+          tableQueries: [
+            {
+              tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+              tableName: "Voucher - 18.11.24 - Black week Room categories!",
+              tableRange: "31:38",
+              name: "intro",
+              fallback: [
+                "Extra 5% off everything",
+                "when you spend min. 250 €",
+                "Extra 10% off everything",
+                "when you spend min. 500 €",
+                "Extra 15% off everything",
+                "when you spend min. 1000 €",
+                "Extra 20% off everything",
+                "when you spend min. 2500 €",
+              ],
+            },
+            {
+              tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+              tableName: "Voucher - 18.11.24 - Black week Room categories!",
+              tableRange: "30",
+              name: "introTitle",
+              fallback: [
+                'Up to <span style="color: #FF2F00;">20% OFF</span> even on top </br> of already reduced prices sitewide',
+              ],
+            },
+            {
+              tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+              tableName: "Voucher - 18.11.24 - Black week Room categories!",
+              tableRange: "41:44",
+              name: "codes",
+              fallback: ["Code: 1", "Code: 2", "Code: 3", "Code: 4"],
+            },
+            {
+              tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+              tableName: "Voucher - 18.11.24 - Black week Room categories!",
+              tableRange: "39",
+              name: "offerDate",
+              fallback: ["The offer is valid until 1st od December."],
+            },
+            {
+              tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+              tableName: "Voucher - 18.11.24 - Black week Room categories!",
+              tableRange: "50:51",
+              name: "condition",
+              fallback: [
+                "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2024 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
+                'If you wish to unsubscribe from the newsletter, you can do so by clicking on the <a href="[[newsunassignurl]]"style="text-decoration:none;color:#000000;">Unsubscribe</a> link.',
+              ],
+            },
+          ],
+        },
+      ],
+    }),
+    new Campaign({
+      startId: "27921",
+      name: "Black Week",
+      date: "2024.11.25",
+      issueCardId: "316527",
+      alarm: {
+        isActive: false,
+      },
+      isArchive: false,
+      optimizeImg: false,
+      figmaUrl:
+        "https://www.figma.com/design/DTtXx65xEPTjidWUXxBwbJ/2024.11.25---Black-Week-Categories-newlsetter-(Copy)?node-id=0-1&node-type=canvas&t=368PdKSOdo78qo0I-0",
+      templates: [
+        {
+          name: "Newsletter 2024.11.25",
+          type: types.NEWSLETTER,
+          template: CategoriesRowsOfferPart,
+          css: types.CSS.NS_BLACK_WEEK,
+          wrapper: types.WRAPPER,
+          background: "#000000",
+          categories: [
+            {
+              type: "image",
+              color: "#ffffff",
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241125Category1.png",
               },
               href: "https://www.beliani.ch/sofas/",
               name: "Sofas",
             },
             {
+              type: "image",
               color: "#ffffff",
               src: {
                 type: "relation",
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241111Category2.png",
+                  "https://upload.pictureserver.net/static/2024/20241125Category2.png",
               },
               href: "https://www.beliani.ch/beds/",
               name: "Beds",
             },
             {
+              type: "image",
               color: "#ffffff",
               src: {
                 type: "relation",
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241111Category3.png",
+                  "https://upload.pictureserver.net/static/2024/20241125Category3.png",
               },
               href: "https://www.beliani.ch/armchairs/",
               name: "Armchairs",
             },
             {
+              type: "image",
               color: "#ffffff",
               src: {
                 type: "relation",
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241111Category4.png",
+                  "https://upload.pictureserver.net/static/2024/20241125Category4.png",
               },
               href: "https://www.beliani.ch/chairs/",
               name: "Chairs",
             },
             {
+              type: "image",
               color: "#ffffff",
               src: {
                 type: "relation",
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241111Category5.png",
+                  "https://upload.pictureserver.net/static/2024/20241125Category5.png",
               },
               href: "https://www.beliani.ch/tables/",
               name: "Tables",
             },
             {
+              type: "image",
               color: "#ffffff",
               src: {
                 type: "relation",
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241111Category6.png",
+                  "https://upload.pictureserver.net/static/2024/20241125Category6.png",
               },
               href: "https://www.beliani.ch/storage/",
               name: "Storage",
             },
             {
+              type: "image",
               color: "#ffffff",
               src: {
                 type: "relation",
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241111Category7.png",
+                  "https://upload.pictureserver.net/static/2024/20241125Category7.png",
               },
               href: "https://www.beliani.ch/textiles/",
               name: "Textiles",
             },
             {
+              type: "image",
               color: "#ffffff",
               src: {
                 type: "relation",
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241111Category8.png",
+                  "https://upload.pictureserver.net/static/2024/20241125Category8.png",
               },
               href: "https://www.beliani.ch/lighting/",
               name: "Lighting",
             },
             {
+              type: "image",
               color: "#ffffff",
               src: {
                 type: "relation",
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241111Category9.png",
+                  "https://upload.pictureserver.net/static/2024/20241125Category9.png",
               },
               href: "https://www.beliani.ch/bathtubs-hot-tubs/",
-              name: "Bathtubs",
+              name: "Baths",
             },
             {
+              type: "image",
               color: "#ffffff",
               src: {
                 type: "relation",
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241111Category10.png",
+                  "https://upload.pictureserver.net/static/2024/20241125Category10.png",
               },
-              href: "https://www.beliani.ch/office-furniture/desks-eng/",
+              href: "https://www.beliani.ch/desks-eng/",
               name: "Desks",
             },
             {
+              type: "image",
               color: "#ffffff",
               src: {
                 type: "relation",
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241111Category11.png",
+                  "https://upload.pictureserver.net/static/2024/20241125Category11.png",
               },
               href: "https://www.beliani.ch/rugs/",
               name: "Rugs",
             },
             {
+              type: "image",
               color: "#ffffff",
               src: {
                 type: "relation",
                 relyOn: "slug",
                 placeholderPosition: "45",
                 value:
-                  "https://upload.pictureserver.net/static/2024/20241111Category12.png",
+                  "https://upload.pictureserver.net/static/2024/20241125Category12.png",
               },
-              href: "https://www.beliani.ch/home-accessories/accessories-decor/",
+              href: "https://www.beliani.ch/home-accessories/",
               name: "Accessories",
+            },
+          ],
+          links: [
+            {
+              query: true,
+              href: {
+                type: "relation",
+                relyOn: "origin",
+                placeholderPosition: "0",
+                value: "content/lp24-11-25",
+              },
+            },
+            {
+              value:
+                "https://upload.pictureserver.net/static/2024/20241125gif.gif",
+            },
+            {
+              query: true,
+              href: {
+                type: "relation",
+                relyOn: "origin",
+                placeholderPosition: "0",
+                value: "content/lp24-11-15",
+              },
+            },
+            {
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241115b.png",
+              },
+            },
+            {
+              query: true,
+              href: {
+                type: "relation",
+                relyOn: "origin",
+                placeholderPosition: "0",
+                value: "content/lp24-11-14",
+              },
+            },
+            {
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241114b.png",
+              },
+            },
+          ],
+          tableQueries: [
+            {
+              tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+              tableName: "Voucher - 25.11.24 - Black Week Categories!",
+              tableRange: "21:28",
+              name: "intro",
+              fallback: [
+                "Extra 5% off everything",
+                "when you spend min. 250 €",
+                "Extra 10% off everything",
+                "when you spend min. 500 €",
+                "Extra 15% off everything",
+                "when you spend min. 1000 €",
+                "Extra 20% off everything",
+                "when you spend min. 2500 €",
+              ],
+            },
+            {
+              tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+              tableName: "Voucher - 25.11.24 - Black Week Categories!",
+              tableRange: "20",
+              name: "introTitle",
+              fallback: [
+                'Up to <span style="color: #FF2F00;">20% OFF</span> even on top </br> of already reduced prices sitewide',
+              ],
+            },
+            {
+              tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+              tableName: "Voucher - 25.11.24 - Black Week Categories!",
+              tableRange: "30:33",
+              name: "codes",
+              fallback: ["Code: 1", "Code: 2", "Code: 3", "Code: 4"],
+            },
+            {
+              tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+              tableName: "Voucher - 25.11.24 - Black Week Categories!",
+              tableRange: "29",
+              name: "offerDate",
+              fallback: ["The offer is valid until 1st od December."],
+            },
+            {
+              tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+              tableName: "Voucher - 25.11.24 - Black Week Categories!",
+              tableRange: "38:39",
+              name: "condition",
+              fallback: [
+                "Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 5% additional discount on your order. The minimum order amount is €250. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 10% additional discount on your order. The minimum order amount is €500. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 15% additional discount on your order. The minimum order amount is €1000. Use the code YYY at the checkout when placing an order on www.beliani.XXX and get the 20% additional discount on your order. The minimum order amount is €2500. Only one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and you can only use one voucher code per order. This offer is valid till 01.12.2024 or as long as the products are in stock. This voucher cannot be used for pending orders. This offer is not valid for resellers. All items are subject to availability. All prices are subject to change without notification.",
+                'If you wish to unsubscribe from the newsletter, you can do so by clicking on the <a href="[[newsunassignurl]]"style="text-decoration:none;color:#000000;">Unsubscribe</a> link.',
+              ],
+            },
+          ],
+        },
+        {
+          name: "Landing 2024.11.25",
+          type: types.LANDINGPAGE,
+          template: CategoriesRowsOfferPart,
+          background: "#000000",
+          categories: [
+            {
+              type: "image",
+              color: "#ffffff",
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241125Category1.png",
+              },
+              href: "https://www.beliani.ch/living-room-furniture/",
+              name: "Living room",
+            },
+            {
+              type: "image",
+              color: "#ffffff",
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241118Category2.png",
+              },
+              href: "https://www.beliani.ch/dining-room-furniture/",
+              name: "Dining room",
+            },
+            {
+              type: "image",
+              color: "#ffffff",
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241118Category3.png",
+              },
+              href: "https://www.beliani.ch/bedroom-furniture/",
+              name: "Bedroom",
+            },
+            {
+              type: "image",
+              color: "#ffffff",
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241118Category4.png",
+              },
+              href: "https://www.beliani.ch/hallway/",
+              name: "Hallway",
+            },
+            {
+              type: "image",
+              color: "#ffffff",
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241118Category5.png",
+              },
+              href: "https://www.beliani.ch/office-furniture/",
+              name: "Office",
+            },
+            {
+              type: "image",
+              color: "#ffffff",
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241118Category6.png",
+              },
+              href: "https://www.beliani.ch/bathroom-furniture/",
+              name: "Bathroom",
+            },
+            {
+              type: "image",
+              color: "#ffffff",
+              src: {
+                type: "relation",
+                relyOn: "slug",
+                placeholderPosition: "45",
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241118Category7.png",
+              },
+              href: "https://www.beliani.ch/children-room/",
+              name: "Kids",
             },
           ],
           css: types.CSS.LP_BLACK_WEEK,

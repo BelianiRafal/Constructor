@@ -72,62 +72,62 @@ const relativePriceFormat = {
   },
 };
 const priceFormats = {
-  DE: (price, options) => {
-    return normalize(price, "DE", options) + " " + relativePriceFormat.DE.currency;
+  DE: (price) => {
+    return normalize(price, "DE") + " " + relativePriceFormat.DE.currency;
   },
-  CHDE: (price, options) => {
-    return normalize(price, "CHDE", options) + " " + relativePriceFormat.CH.currency;
+  CHDE: (price) => {
+    return normalize(price, "CHDE") + " " + relativePriceFormat.CH.currency;
   },
-  AT: (price, options) => {
-    return normalize(price, "AT", options) + " " + relativePriceFormat.AT.currency;
+  AT: (price) => {
+    return normalize(price, "AT") + " " + relativePriceFormat.AT.currency;
   },
-  FR: (price, options) => {
-    return normalize(price, "FR", options) + " " + relativePriceFormat.FR.currency;
+  FR: (price) => {
+    return normalize(price, "FR") + " " + relativePriceFormat.FR.currency;
   },
-  BE: (price, options) => {
-    return normalize(price, "BE", options) + " " + relativePriceFormat.BE.currency;
+  BE: (price) => {
+    return normalize(price, "BE") + " " + relativePriceFormat.BE.currency;
   },
-  IT: (price, options) => {
-    return normalize(price, "IT", options) + " " + relativePriceFormat.IT.currency;
+  IT: (price) => {
+    return normalize(price, "IT") + " " + relativePriceFormat.IT.currency;
   },
-  UK: (price, options) => {
-    return relativePriceFormat.UK.currency + normalize(price, "UK", options);
+  UK: (price) => {
+    return relativePriceFormat.UK.currency + normalize(price, "UK");
   },
-  ES: (price, options) => {
-    return normalize(price, "ES", options) + " " + relativePriceFormat.ES.currency;
+  ES: (price) => {
+    return normalize(price, "ES") + " " + relativePriceFormat.ES.currency;
   },
-  PT: (price, options) => {
-    return normalize(price, "PT", options) + " " + relativePriceFormat.PT.currency;
+  PT: (price) => {
+    return normalize(price, "PT") + " " + relativePriceFormat.PT.currency;
   },
-  PL: (price, options) => {
-    return normalize(price, "PL", options) + relativePriceFormat.PL.currency;
+  PL: (price) => {
+    return normalize(price, "PL") + relativePriceFormat.PL.currency;
   },
-  HU: (price, options) => {
-    return normalize(price, "HU", options) + " " + relativePriceFormat.HU.currency;
+  HU: (price) => {
+    return normalize(price, "HU") + " " + relativePriceFormat.HU.currency;
   },
-  NL: (price, options) => {
-    return relativePriceFormat.NL.currency + " " + normalize(price, "NL", options);
+  NL: (price) => {
+    return relativePriceFormat.NL.currency + " " + normalize(price, "NL");
   },
-  SE: (price, options) => {
-    return normalize(price, "SE", options) + relativePriceFormat.SE.currency;
+  SE: (price) => {
+    return normalize(price, "SE") + relativePriceFormat.SE.currency;
   },
-  DK: (price, options) => {
-    return normalize(price, "DK", options) + " " + relativePriceFormat.DK.currency;
+  DK: (price) => {
+    return normalize(price, "DK") + " " + relativePriceFormat.DK.currency;
   },
-  CZ: (price, options) => {
-    return normalize(price, "CZ", options) + " " + relativePriceFormat.CZ.currency;
+  CZ: (price) => {
+    return normalize(price, "CZ") + " " + relativePriceFormat.CZ.currency;
   },
-  FI: (price, options) => {
-    return normalize(price, "FI", options) + " " + relativePriceFormat.FI.currency;
+  FI: (price) => {
+    return normalize(price, "FI") + " " + relativePriceFormat.FI.currency;
   },
-  NO: (price, options) => {
-    return normalize(price, "NO", options) + relativePriceFormat.NO.currency;
+  NO: (price) => {
+    return normalize(price, "NO") + relativePriceFormat.NO.currency;
   },
-  SK: (price, options) => {
-    return normalize(price, "SK", options) + " " + relativePriceFormat.SK.currency;
+  SK: (price) => {
+    return normalize(price, "SK") + " " + relativePriceFormat.SK.currency;
   },
-  RO: (price, options) => {
-    return normalize(price, "RO", options) + " " + relativePriceFormat.RO.currency;
+  RO: (price) => {
+    return normalize(price, "RO") + " " + relativePriceFormat.RO.currency;
   },
 };
 
