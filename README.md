@@ -96,7 +96,7 @@ Or use Iterate component which has 3 properties:\
 
 ## Template rendering happens inside main/initApp.js
 From line 69 to 225.
-There is a lot of checks, mutations with links, categories provided in app.js
+There is a lot of checks, mutations with links, categories provided in **app.js**
 
 ## What not to do:
 ### Not change any values in components
@@ -168,7 +168,7 @@ campaigns. Instead, just copy current component and create new one. In order to 
    }
 4. Add template import to /templates/index.js
 5. Add template to templates object.
-6. Use it in app.js file by accessing templates.[template_name]
+6. Use it in **app.js** file by accessing templates.[template_name]
 
 ## Entities:
 #### path: entities/shops.js
@@ -203,7 +203,7 @@ If something is wrong, notification will appear. If you don't know which propert
 
 
 ## Campaign render flow
-1. Define campaign using Campaign class in app.js file.
+1. Define campaign using Campaign class in **app.js** file.
 2. Add templates to campaign using Template classes or as always defined object by yourself.
   -Newsletter template should have type newsletter, wrapper field in newsletter responsible for adding: DOCTYPE, HEAD, TITLE, META tags and others (see: Where Css and Types located)
   -Landing template should have type landing (see: Where Css and Types located)
@@ -282,7 +282,7 @@ If not fetched dynamically will use local data which is located inside: main/dat
 2. Copy values from spreadsheet from 1 row and column to last row last column
 3. Open https://csvjson.com/csv2json select Hash option
 4. Convert value to JSON
-5. Add to app.js file
+5. Add to **app.js** file
 
 ## Use campaign data in template
 1. Check if function "getCampaignData" has been added in template
