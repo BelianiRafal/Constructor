@@ -6,7 +6,9 @@ ALT + SHIFT + F Prettier
 SHIFT + ALT + ARROW LEFT/RIGHT Select to the end of the string
 
 ## API DOCUMENTATION: How to fetch spreadsheet data
-### https://developers.google.com/sheets/api/reference/rest/v4/spreadsheets.values
+#### https://developers.google.com/sheets/api/reference/rest/v4/spreadsheets.values
+#### path: api/fetchTranslations.js
+Function ```getTranslations``` responsible for fetching translation for every tableQuery provided in app.js file. But before making it app modify in proper look tableRange by splitting it and concataneta backwards with country column provided in config/shops.js
 
 
 ## How to setup global function to acces it everywhere
