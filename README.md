@@ -89,7 +89,7 @@ From line 69 to 225.
 There is a lot of checks, mutations with links, categories provided in app.js
 
 ## What not to do:
-### Not chagen any values in components
+### Not change any values in components
 If some value will ba changed in component, it can affect other templates,
 campaigns. Instead of copy current component and create new one. In order to make safe changes.
 
