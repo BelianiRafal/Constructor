@@ -122,9 +122,10 @@ campaigns. Instead, just copy current component and create new one. In order to 
 #### path: config/languages.js
 
 ## Create new template
-1. Create file [template_name].js in template folder
+1. Create file **[template_name].js** in templates folder
 2. Paste code below into created file
-   export async function [template_name]({
+```
+export async function [template_name]({
    links,
    getCampaignData,
    getProductById,
@@ -144,9 +145,11 @@ campaigns. Instead, just copy current component and create new one. In order to 
    background,
    }) {
     return `<p>template_name</p>`
-   }
+}
+```
 
- 3. Change [template_name] to your name -> 
+ 3. Change **[template_name]** to your name: \
+```
  export async function MondayTemplate({
    links,
    getCampaignData,
@@ -166,8 +169,9 @@ campaigns. Instead, just copy current component and create new one. In order to 
    background,
    }) {
     return `<p>MondayTemplate</p>`
-   }
-4. Add template import to /templates/index.js
+}
+```
+4. Add template import to **/templates/index.js**
 5. Add template to templates object.
 6. Use it in **app.js** file by accessing templates.[template_name]
 
