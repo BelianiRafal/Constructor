@@ -186,8 +186,235 @@ If you don't know which property to define, by clicking Ctrl+Space you will get 
 
 ## To use in app.js
 #### Campaign -> to initialize campaign in app.js
+```
+new entities.Campaign({
+        startId: "28753",
+        name: "Newsletter Free wall decor",
+        date: "2024.12.09",
+        issueCardId: "322376",
+        alarm: {
+          isActive: false,
+        },
+        isArchive: false,
+        optimizeImg: false,
+        figmaUrl:
+          "https://www.figma.com/design/yc30oxD9wTbtNZvNvZvMfl/Free-wall-decor-(Copy)?node-id=0-1&node-type=canvas&t=S4hTJat0KKjjlJ1J-0",
+        templates: []
+}),
+```
 
 #### MondayFreebieNewsletter -> to initialize template with known properties
+```
+          new entities.MondayFreebieNewsletter({
+            name: "Newsletter",
+            type: types.NEWSLETTER,
+            background: "#FFCCB7",
+            wrapper: types.WRAPPER,
+            css: types.CSS.NS,
+            intro: {
+              background: "#750000",
+              color: "#ffffff",
+            },
+            offerPart: {
+              type: "code",
+            },
+            categories: [
+              new entities.MondayCategoryProducts({
+                name: "Storage beds",
+                background: "#750000",
+                color: "#ffffff",
+                src: "https://upload.pictureserver.net/static/2024/20241209Category1.png",
+                href: "https://www.beliani.ch/beds/storage-beds/",
+                products: [
+                  new entities.ProductInstance({
+                    id: "564062",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category11.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "192890",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category12.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "142341",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category13.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "392644",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category14.png",
+                  }),
+                ],
+              }),
+              new entities.MondayCategoryProducts({
+                name: "Fabric beds",
+                background: "#FFCCB7",
+                color: "#000000",
+                type: "monday",
+                src: "https://upload.pictureserver.net/static/2024/20241209Category2.png",
+                href: "https://www.beliani.ch/beds/fabric-beds/",
+                products: [
+                  new entities.ProductInstance({
+                    id: "565963",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category21.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "449153",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category22.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "329401",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category23.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "186252",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category24.png",
+                  }),
+                ],
+              }),
+              new entities.MondayCategoryProducts({
+                name: "Metal beds",
+                background: "#750000",
+                color: "#ffffff",
+                type: "monday",
+                src: "https://upload.pictureserver.net/static/2024/20241209Category3.png",
+                href: "https://www.beliani.ch/beds/metal-beds/",
+                products: [
+                  new entities.ProductInstance({
+                    id: "136637",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category31.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "244594",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category32.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "306232",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category33.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "51335",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category34.png",
+                  }),
+                ],
+              }),
+              new entities.MondayCategoryProducts({
+                name: "Leather beds",
+                background: "#FFCCB7",
+                color: "#000000",
+                type: "monday",
+                src: "https://upload.pictureserver.net/static/2024/20241209Category4.png",
+                href: "https://www.beliani.ch/beds/leather-beds/",
+                products: [
+                  new entities.ProductInstance({
+                    id: "93604",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category41.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "746",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category42.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "194963",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category43.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "394734",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category44.png",
+                  }),
+                ],
+              }),
+            ],
+            links: new entities.TemplateLinks([
+              new entities.OriginHref({ value: "content/lp24-12-09" }),
+              new entities.SlugImage({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241209_01.png",
+              }),
+              new entities.OriginHref({ value: "content/lp24-12-09" }),
+              new entities.Image({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241209gif.gif",
+              }),
+              new entities.OriginHref({ value: "content/lp24-12-05" }),
+              new entities.SlugImage({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241205b.png",
+              }),
+              new entities.OriginHref({ value: "content/lp24-12-04" }),
+              new entities.SlugImage({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241204b.png",
+              }),
+            ]),
+            tableQueries: [
+              new entities.TableQuery({
+                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+                tableName: "Voucher - 09.12.24 - Free wall decor!",
+                tableRange: "20:22",
+                name: "offerPart",
+              }),
+              new entities.TableQuery({
+                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+                tableName: "Voucher - 09.12.24 - Free wall decor!",
+                tableRange: "24:25",
+                name: "intro",
+              }),
+              new entities.TableQuery({
+                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+                tableName: "Voucher - 09.12.24 - Free wall decor!",
+                tableRange: "23",
+                name: "code",
+              }),
+              new entities.TableQuery({
+                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+                tableName: "Voucher - 09.12.24 - Free wall decor!",
+                tableRange: "26:29",
+                name: "categories",
+              }),
+              new entities.TableQuery({
+                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+                tableName: "Voucher - 09.12.24 - Free wall decor!",
+                tableRange: "37:39",
+                name: "condition",
+              }),
+            ],
+            freebies: {
+              items: [
+                new entities.FreebieItem({
+                  row: 1,
+                  col: 2,
+                  products: [
+                    {
+                      id: "113426",
+                      src: "https://upload.pictureserver.net/static/2024/20241209Freebie1.png",
+                      style: "padding-right: 10px; padding-left: 60px;",
+                    },
+                    {
+                      id: "113443",
+                      src: "https://upload.pictureserver.net/static/2024/20241209Freebie2.png",
+                      style: "padding-right: 60px; padding-left: 10px;",
+                    },
+                  ],
+                }),
+                new entities.FreebieItem({
+                  row: 1,
+                  col: 2,
+                  products: [
+                    {
+                      id: "358921",
+                      src: "https://upload.pictureserver.net/static/2024/20241209Freebie3.png",
+                      style: "padding-right: 10px; padding-left: 60px;",
+                    },
+                    {
+                      id: "174021",
+                      src: "https://upload.pictureserver.net/static/2024/20241209Freebie4.png",
+                      style: "padding-right: 60px; padding-left: 10px;",
+                    },
+                  ],
+                }),
+              ],
+            },
+          })
+```
 #### MondayCategoryProducts -> to initialize categories for template in app.js
 
 #### OriginHref -> to initialize href that is based on origin
