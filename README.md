@@ -1,8 +1,8 @@
 ## Shortcuts
 
-```CTRL + D``` Select all
-```CTRL + ALT``` + I Increment
-```ALT + SHIFT``` + F Prettier
+```CTRL + D``` Select all \n
+```CTRL + ALT``` + I Increment \n
+```ALT + SHIFT``` + F Prettier \n
 ```SHIFT + ALT``` + ARROW LEFT/RIGHT Select to the end of the string
 
 ## API DOCUMENTATION: How to fetch spreadsheet data
