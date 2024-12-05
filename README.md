@@ -27,7 +27,6 @@ Example:
 ```
 
 
-<!-- LOOP -->
 ## How to access last item in loop
 index === [array_item_name].length - 1
 
@@ -86,8 +85,6 @@ itemFn      -> function to render each item
       },
     })```
     
-<!-- LOOP -->
-
 
 ## Template rendering happens inside main/initApp.js
 From line 69 to 225.
@@ -271,7 +268,6 @@ If Footer, Header, Translation templates, Category Links, Category Titles fetche
 functions getHeader, getFooter, getPhrase wil use fetched data.
 If not fetched dynamically will use local data which is located inside: main/data/[...].js
 
-<!-- Campaign data -->
 
 ## Add campaign data
 1. Open standart CSV compatable table (slugs should be UPPERCASE)
@@ -285,6 +281,6 @@ If not fetched dynamically will use local data which is located inside: main/dat
 2. Call "getCampaignData" function with Column name parameter in template place where you want get result.
 
 ## Example 
-# ${getCampaignData("Regular Conditions")}
-
-<!-- Campaign data -->
+```
+  getCampaignData("Regular Conditions")
+```
