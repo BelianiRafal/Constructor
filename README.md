@@ -91,7 +91,7 @@ There is a lot of checks, mutations with links, categories provided in app.js
 ## What not to do:
 ### Not change any values in components
 If some value will ba changed in component, it can affect other templates,
-campaigns. Instead of copy current component and create new one. In order to make safe changes.
+campaigns. Instead, just copy current component and create new one. In order to make safe changes.
 
 ## Errors:
 http://127.0.0.1:5500/templates/[file_name].js net::ERR_ABORTED 404 (Not Found)
