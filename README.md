@@ -28,13 +28,14 @@ Example:
 index === [array_item_name].length - 1
 
 Example:
-    ```categories.map((item, idx) => {
+${
+    categories.map((item, idx) => {
         if (idx === categories.length - 1) {
             return ``;
         }
         return ``;
-    }).join("")```
-
+    }).join("")
+}
 
 Or use Iterate component which has 3 properties:
 items       -> to iterate through
@@ -163,9 +164,9 @@ http://127.0.0.1:5500/templates/[file_name].js net::ERR_ABORTED 404 (Not Found)
 ## Entities:
 ### path: entities/shops.js
 ### description: Main problem why sometimes app doesn't work, because of lack provided data to render template, whether it is newsletter or landing page.
-### since we all work on this version, where we have to change data inside application some problems may appear because of lack some code.
-### Entities allows us safely initialize each propery for campaign, template, tableQuery.
-### If something is wrong, notification will appear. If you don't know which property to define, by clicking Ctrl+Space you will get hint window.
+#### Since we all work on this version, where we have to change data inside application some problems may appear because of lack some code.
+#### Entities allows us safely initialize each propery for campaign, template, tableQuery.
+#### If something is wrong, notification will appear. If you don't know which property to define, by clicking Ctrl+Space you will get hint window.
 
 ### But you can always define everything as we do previously.
 
@@ -229,31 +230,31 @@ If you want fetch it dynamically, define TableQuery using class or object manual
 Also you have ability to fetch Footer, Header, Category Links, Category Titles using classes.
 
 ## Example: TableQuery class
-tableQueries: [
+```tableQueries: [
     new TableQuery({
         tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
         tableName: "Voucher - 09.12.24 - Free wall decor!",
         tableRange: "37:39",
         name: "condition",
     })
-]
+]```
 ## Example: object manually
-tableQueries: [
+```tableQueries: [
     {
         tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
         tableName: "Voucher - 09.12.24 - Free wall decor!",
         tableRange: "37:39",
         name: "condition",
     }
-]
+]```
 ## Example: Footer, Header, Translation templates, Category Links, Category Titles
-tableQueries: [
+```tableQueries: [
     new TableQueryHeader(),
     new TableQueryFooter(),
     new TableQueryTranslationTemplates(),
     new TableQueryCategoryLinks(),
     new TableQueryCategoryTitles(),
-]
+]```
 If Footer, Header, Translation templates, Category Links, Category Titles fetched dynamically
 functions getHeader, getFooter, getPhrase wil use fetched data.
 If not fetched dynamically will use local data which is located inside: main/data/[...].js
