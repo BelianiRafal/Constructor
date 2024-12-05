@@ -36,7 +36,7 @@ Example:
 ## How to access last item in loop
 ```index === [array_item_name].length - 1```
 
-Example:
+#Example:#
 ```
     categories.map((item, idx) => {
         if (idx === categories.length - 1) {
@@ -46,7 +46,7 @@ Example:
     }).join("")
 ```
 
-Or use Iterate component which has 3 properties:\
+> Or use Iterate component which has 3 properties:\
 **items**       -> to iterate through\
 **lastItemFn**  -> function to render last item\
 **itemFn**      -> function to render each item
