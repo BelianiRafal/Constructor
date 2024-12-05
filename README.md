@@ -47,9 +47,9 @@ Example:
 ```
 
 Or use Iterate component which has 3 properties:\
-items       -> to iterate through\
-lastItemFn  -> function to render last item\
-itemFn      -> function to render each item
+**items**       -> to iterate through\
+**lastItemFn**  -> function to render last item\
+**itemFn**      -> function to render each item
 
   EXAMPLE:
 ```
