@@ -148,7 +148,7 @@ export async function [template_name]({
 }
 ```
 
- 3. Change **[template_name]** to your name: \
+ 3. Change **[template_name]** to your name:
 ```
  export async function MondayTemplate({
    links,
