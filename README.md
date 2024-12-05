@@ -99,9 +99,9 @@ If some value will ba changed in component, it can affect other templates,
 campaigns. Instead, just copy current component and create new one. In order to make safe changes.
 
 ## Errors:
-http://127.0.0.1:5500/templates/[file_name].js net::ERR_ABORTED 404 (Not Found)
--File name import not found.
--File doesn't exist.
+```http://127.0.0.1:5500/templates/[file_name].js net::ERR_ABORTED 404 (Not Found)``` \
+-File name import not found.\
+-File doesn't exist.\
 -File ends on template_name but should template_name.js
 
 ## Set CLIENT ID to read values from spreadsheet
