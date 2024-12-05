@@ -203,7 +203,7 @@ new entities.Campaign({
 }),
 ```
 
-#### MondayFreebieNewsletter -> to initialize template with known properties
+#### MondayFreebieNewsletter -> to initialize template inside **templates: []** with known properties
 ```
           new entities.MondayFreebieNewsletter({
             name: "Newsletter",
@@ -417,9 +417,52 @@ new entities.Campaign({
 ```
 #### MondayCategoryProducts -> to initialize categories for template in app.js
 
+#### ProductInstance -> to initialize in **products: []** in app.js for **template**
+```
+new entities.ProductInstance({
+                    id: "564062",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category11.png",
+                  })
+```
+#### FreebieItem -> to initialize in **freebies: { items: [] }** for **template**
+```
+new entities.FreebieItem({
+                  row: 1,
+                  col: 2,
+                  products: [
+                    {
+                      id: "358921",
+                      src: "https://upload.pictureserver.net/static/2024/20241209Freebie3.png",
+                      style: "padding-right: 10px; padding-left: 60px;",
+                    },
+                    {
+                      id: "174021",
+                      src: "https://upload.pictureserver.net/static/2024/20241209Freebie4.png",
+                      style: "padding-right: 60px; padding-left: 10px;",
+                    },
+                  ],
+                })
+```
+
 #### OriginHref -> to initialize href that is based on origin
+```
+new entities.OriginHref({ value: "content/lp24-12-09" })
+```
+
 #### SlugImage -> to initialize image that is based on slug
+```
+new entities.SlugImage({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241209_01.png",
+              })
+
 #### TableQuery -> to initialize table query for tableQueries in app.js for template
+new entities.TableQuery({
+                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+                tableName: "Voucher - 09.12.24 - Free wall decor!",
+                tableRange: "37:39",
+                name: "condition",
+              })
 #### TableQueryHeader -> to initialize table query for Header spreadsheet
 #### TableQueryFooter -> to initialize table query for Header spreadsheet
 #### TableQueryTranslationTemplates -> to initialize table query for Header spreadsheet
