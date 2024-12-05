@@ -185,26 +185,26 @@ If you don't know which property to define, by clicking Ctrl+Space you will get 
 **But you can always define everything as we do previously.**
 
 ## To use in app.js
-### Campaign -> to initialize campaign in app.js
+#### Campaign -> to initialize campaign in app.js
 
-### MondayFreebieNewsletter -> to initialize template with known properties
-### MondayCategoryProducts -> to initialize categories for template in app.js
+#### MondayFreebieNewsletter -> to initialize template with known properties
+#### MondayCategoryProducts -> to initialize categories for template in app.js
 
-### OriginHref -> to initialize href that is based on origin
-### SlugImage -> to initialize image that is based on slug
-### TableQuery -> to initialize table query for tableQueries in app.js for template
-### TableQueryHeader -> to initialize table query for Header spreadsheet
-### TableQueryFooter -> to initialize table query for Header spreadsheet
-### TableQueryTranslationTemplates -> to initialize table query for Header spreadsheet
-### TableQueryCategoryLinks -> to initialize table query for Header spreadsheet
-### TableQueryCategoryTitles -> to initialize table query for Header spreadsheet
-### TemplateLinks -> to initialize Template Links in app.js for template
-### Image -> to initialize image that is not based on nothing
+#### OriginHref -> to initialize href that is based on origin
+#### SlugImage -> to initialize image that is based on slug
+#### TableQuery -> to initialize table query for tableQueries in app.js for template
+#### TableQueryHeader -> to initialize table query for Header spreadsheet
+#### TableQueryFooter -> to initialize table query for Header spreadsheet
+#### TableQueryTranslationTemplates -> to initialize table query for Header spreadsheet
+#### TableQueryCategoryLinks -> to initialize table query for Header spreadsheet
+#### TableQueryCategoryTitles -> to initialize table query for Header spreadsheet
+#### TemplateLinks -> to initialize Template Links in app.js for template
+#### Image -> to initialize image that is not based on nothing
 
 ## To use internally
-### Language -> to initialize language for shops
-### TableQueryCSV -> to initialize table query for tableQueries in app.js for template
-### NewsletterTemplate -> to extend new Template (see) entities/Templates/Monday.js
+#### Language -> to initialize language for shops
+#### TableQueryCSV -> to initialize table query for tableQueries in app.js for template
+#### NewsletterTemplate -> to extend new Template (see) entities/Templates/Monday.js
 
 
 ## Campaign render flow
