@@ -206,25 +206,27 @@ If something is wrong, notification will appear. If you don't know which propert
 4. Select Campaign, Template, Seller, Country.
 
 ## Every template that will be rendered has access to:
+```
 {
-links, -> links provided by user in app.js file for template
-getCampaignData, -> function responsible for get Campaign data which is defined in app.js for Campaign object in hash CSV format.
-getProductById, -> function responsible for get product by id
-getCategoryLink, -> function responsible for get category link by ENG category
-getCategoryTitle, -> function responsible for get category title by ENG category
-getPhrase, -> function responsible for get translation template
-getFooter, -> function responsible for get footer translations by ENG word
-getHeader, -> function responsible for get header translations by ENG word
-queries, -> object with properites that user defined in tableQueries array.
-id, -> campaign id
-shop, -> to see what properties available: config/shops.js
-country, -> get access to rendered country
-type, -> template type (newsletter or landing)
-name, -> template name,
-utm: -> tracking url with id,
-categories, -> categories handled by app
-background, -> background color | default #ffffff -> located in initApp.js | possibility to add user color in app.js for template.
+  links,             -> links provided by user in app.js file for template
+  getCampaignData,   -> function responsible for get Campaign data which is defined in app.js for Campaign object in hash CSV format.
+  getProductById,    -> function responsible for get product by id
+  getCategoryLink,   -> function responsible for get category link by ENG category
+  getCategoryTitle,  -> function responsible for get category title by ENG category
+  getPhrase,         -> function responsible for get translation template
+  getFooter,         -> function responsible for get footer translations by ENG word
+  getHeader,         -> function responsible for get header translations by ENG word
+  queries,           -> object with properites that user defined in tableQueries array.
+  id,                -> campaign id
+  shop,              -> to see what properties available: config/shops.js
+  country,           -> get access to rendered country
+  type,              -> template type (newsletter or landing)
+  name,              -> template name,
+  utm:               -> tracking url with id,
+  categories,        -> categories handled by app
+  background,        -> background color | default #ffffff -> located in initApp.js | possibility to add user color in app.js for template.
 }
+```
 
 ## Update Footer, Header, Translation templates, Category Links, Category Titles
 ### path: main/data
