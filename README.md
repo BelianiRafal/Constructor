@@ -28,17 +28,17 @@ Example:
 
 
 ## How to access last item in loop
-index === [array_item_name].length - 1
+```index === [array_item_name].length - 1```
 
 Example:
-${
+```
     categories.map((item, idx) => {
         if (idx === categories.length - 1) {
             return ``;
         }
         return ``;
     }).join("")
-}
+```
 
 Or use Iterate component which has 3 properties:
 items       -> to iterate through
