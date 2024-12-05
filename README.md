@@ -46,7 +46,8 @@ lastItemFn  -> function to render last item
 itemFn      -> function to render each item
 
   EXAMPLE:
-    ```Iterate({
+```
+    Iterate({
       items: categories,
       itemFn: (item, index) => {
         return `
@@ -83,7 +84,8 @@ itemFn      -> function to render each item
             </tr>
          `;
       },
-    })```
+    })
+```
     
 
 ## Template rendering happens inside main/initApp.js
