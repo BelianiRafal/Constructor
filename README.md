@@ -1,9 +1,9 @@
 ## Shortcuts
 
-CTRL + D Select all
-CTRL + ALT + I Increment
-ALT + SHIFT + F Prettier
-SHIFT + ALT + ARROW LEFT/RIGHT Select to the end of the string
+```CTRL + D``` Select all
+```CTRL + ALT``` + I Increment
+```ALT + SHIFT``` + F Prettier
+```SHIFT + ALT``` + ARROW LEFT/RIGHT Select to the end of the string
 
 ## API DOCUMENTATION: How to fetch spreadsheet data
 #### https://developers.google.com/sheets/api/reference/rest/v4/spreadsheets.values
