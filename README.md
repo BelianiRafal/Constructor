@@ -95,11 +95,12 @@ Or use Iterate component which has 3 properties:\
     
 
 ## Template rendering happens inside main/initApp.js
-From line 69 to 225.
-There is a lot of checks, mutations with links, categories provided in **app.js**
+From line 69 to 225. \
+There is some checks\
+Data mutations for links, categories provided in **app.js**
 
 ## What not to do:
-### Not change any values in components
+### Try to not change any values in components. only extend them or copy.
 If some value will ba changed in component, it can affect other templates,
 campaigns. Instead, just copy current component and create new one. In order to make safe changes.
 
