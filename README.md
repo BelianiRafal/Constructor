@@ -13,7 +13,7 @@ responsible for fetching translation for every tableQuery provided in app.js fil
 
 
 ## How to setup global function/variable to acces it everywhere
-1. Open index.html file
+1. Open **index.html** file
 2. Create ```<script></script>``` tag BEFORE ```<script type="module" src="app.js"></script>``` tag.
 3. Now, everything that will be defined inside script is accessible globally across whole app.
 
