@@ -28,14 +28,13 @@ Example:
 index === [array_item_name].length - 1
 
 Example:
-${
-    categories.map((item, idx) => {
+    ```categories.map((item, idx) => {
         if (idx === categories.length - 1) {
             return ``;
         }
         return ``;
-    }).join("")
-}
+    }).join("")```
+
 
 Or use Iterate component which has 3 properties:
 items       -> to iterate through
@@ -43,7 +42,7 @@ lastItemFn  -> function to render last item
 itemFn      -> function to render each item
 
   EXAMPLE:
-    ${Iterate({
+    ```Iterate({
       items: categories,
       itemFn: (item, index) => {
         return `
@@ -80,7 +79,7 @@ itemFn      -> function to render each item
             </tr>
          `;
       },
-    })}
+    })```
     
 <!-- LOOP -->
 
