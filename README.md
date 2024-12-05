@@ -180,7 +180,8 @@ export async function [template_name]({
 #### description: Main problem why sometimes app doesn't work, because of lack provided data to render template, whether it is newsletter or landing page.
 Since we all work on this version, where we have to change data inside application some problems may appear because of lack some code.\
 Entities allows us safely initialize each propery for campaign, template, tableQuery.\
-If something is wrong, notification will appear. If you don't know which property to define, by clicking Ctrl+Space you will get hint window.\
+If something is wrong, notification will appear.\
+If you don't know which property to define, by clicking Ctrl+Space you will get hint window.\
 **But you can always define everything as we do previously.**
 
 ## To use in app.js
