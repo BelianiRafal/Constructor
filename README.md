@@ -182,7 +182,7 @@ export async function [template_name]({
 > Entities allows safely initialize each propery for campaign, template, tableQuery.\
 > If something is wrong, notification will appear.\
 > If you don't know which property to define, by clicking Ctrl+Space you will get hint window.\
-> **But you can always define everything as we do previously.**
+**But you can always define everything as we do previously.**
 
 ## To use in app.js
 #### Campaign -> to initialize campaign in app.js
