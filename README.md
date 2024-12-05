@@ -415,7 +415,34 @@ new entities.Campaign({
             },
           })
 ```
-#### MondayCategoryProducts -> to initialize categories for template in app.js
+#### MondayCategoryProducts -> to initialize category products list for template in app.js
+```
+new entities.MondayCategoryProducts({
+                name: "Storage beds",
+                background: "#750000",
+                color: "#ffffff",
+                src: "https://upload.pictureserver.net/static/2024/20241209Category1.png",
+                href: "https://www.beliani.ch/beds/storage-beds/",
+                products: [
+                  new entities.ProductInstance({
+                    id: "564062",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category11.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "192890",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category12.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "142341",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category13.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "392644",
+                    src: "https://upload.pictureserver.net/static/2024/20241209Category14.png",
+                  }),
+                ],
+              })
+```
 
 #### ProductInstance -> to initialize in **products: []** in app.js for **template**
 ```
