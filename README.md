@@ -9,7 +9,7 @@
 #### https://developers.google.com/sheets/api/reference/rest/v4/spreadsheets.values
 #### path: api/fetchTranslations.js
 Function ```getTranslations```
-responsible for fetching translation for every tableQuery provided in app.js file. But before making it, app will modify/prepare in proper look tableRange by splitting it and concatenate backwards with country column provided in config/shops.js
+responsible for fetching translation for every tableQuery provided in **app.js** file. But before making it, app will modify/prepare in proper look tableRange by splitting it and concatenate backwards with country column provided in **config/shops.js**
 
 
 ## How to setup global function/variable to acces it everywhere
