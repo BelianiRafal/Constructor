@@ -105,15 +105,15 @@ campaigns. Instead, just copy current component and create new one. In order to 
 -File ends on template_name but should template_name.js
 
 ## Set CLIENT ID to read values from spreadsheet
-### path: utils/config.js
-### url: https://console.cloud.google.com/apis/credentials
+#### path: utils/config.js
+#### url: https://console.cloud.google.com/apis/credentials
 
 ## Where Css and Types located
-### path: utils/types.js
+#### path: utils/types.js
 
 ## Add new shop and language
-### path: config/shops.js
-### path: config/languages.js
+#### path: config/shops.js
+#### path: config/languages.js
 
 ## Create new template
 1. Create file [template_name].js in template folder
@@ -166,11 +166,11 @@ campaigns. Instead, just copy current component and create new one. In order to 
 6. Use it in app.js file by accessing templates.[template_name]
 
 ## Entities:
-### path: entities/shops.js
-### description: Main problem why sometimes app doesn't work, because of lack provided data to render template, whether it is newsletter or landing page.
-#### Since we all work on this version, where we have to change data inside application some problems may appear because of lack some code.
-#### Entities allows us safely initialize each propery for campaign, template, tableQuery.
-#### If something is wrong, notification will appear. If you don't know which property to define, by clicking Ctrl+Space you will get hint window.
+#### path: entities/shops.js
+#### description: Main problem why sometimes app doesn't work, because of lack provided data to render template, whether it is newsletter or landing page.
+Since we all work on this version, where we have to change data inside application some problems may appear because of lack some code.\
+Entities allows us safely initialize each propery for campaign, template, tableQuery.\
+If something is wrong, notification will appear. If you don't know which property to define, by clicking Ctrl+Space you will get hint window.
 
 ### But you can always define everything as we do previously.
 
