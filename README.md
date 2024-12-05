@@ -36,7 +36,7 @@ Example:
 ## How to access last item in loop
 ```index === [array_item_name].length - 1```
 
-#Example:#
+Example:
 ```
     categories.map((item, idx) => {
         if (idx === categories.length - 1) {
@@ -46,7 +46,7 @@ Example:
     }).join("")
 ```
 
-> Or use Iterate component which has 3 properties:\
+Or use Iterate component which has 3 properties:\
 **items**       -> to iterate through\
 **lastItemFn**  -> function to render last item\
 **itemFn**      -> function to render each item
@@ -178,11 +178,11 @@ export async function [template_name]({
 ## Entities:
 #### path: entities/shops.js
 #### description: Main problem why sometimes app doesn't work, because of lack provided data to render template, whether it is newsletter or landing page.
-Since we all work on this version, where we have to change data inside application some problems may appear because of lack some code.\
-Entities allows safely initialize each propery for campaign, template, tableQuery.\
-If something is wrong, notification will appear.\
-If you don't know which property to define, by clicking Ctrl+Space you will get hint window.\
-**But you can always define everything as we do previously.**
+> Since we all work on this version, where we have to change data inside application some problems may appear because of lack some code.\
+> Entities allows safely initialize each propery for campaign, template, tableQuery.\
+> If something is wrong, notification will appear.\
+> If you don't know which property to define, by clicking Ctrl+Space you will get hint window.\
+> **But you can always define everything as we do previously.**
 
 ## To use in app.js
 #### Campaign -> to initialize campaign in app.js
