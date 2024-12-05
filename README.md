@@ -482,21 +482,80 @@ new entities.SlugImage({
                 value:
                   "https://upload.pictureserver.net/static/2024/20241209_01.png",
               })
+```
 
 #### TableQuery -> to initialize table query for tableQueries in app.js for template
+```
 new entities.TableQuery({
                 tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
                 tableName: "Voucher - 09.12.24 - Free wall decor!",
                 tableRange: "37:39",
                 name: "condition",
               })
+```
+
 #### TableQueryHeader -> to initialize table query for Header spreadsheet
+```
+tableQueries: [
+    new TableQueryHeader(),
+]
+```
 #### TableQueryFooter -> to initialize table query for Header spreadsheet
+```
+tableQueries: [
+    new TableQueryFooter(),
+]
+```
 #### TableQueryTranslationTemplates -> to initialize table query for Header spreadsheet
+```
+tableQueries: [
+    new TableQueryTranslationTemplates(),
+]
+```
 #### TableQueryCategoryLinks -> to initialize table query for Header spreadsheet
+```
+tableQueries: [
+    new TableQueryCategoryLinks(),
+]
+```
 #### TableQueryCategoryTitles -> to initialize table query for Header spreadsheet
+```
+tableQueries: [
+    new TableQueryCategoryTitles(),
+]
+```
 #### TemplateLinks -> to initialize Template Links in app.js for template
-#### Image -> to initialize image that is not based on nothing
+```
+new entities.TemplateLinks([
+              new entities.OriginHref({ value: "content/lp24-12-09" }),
+              new entities.SlugImage({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241209_01.png",
+              }),
+              new entities.OriginHref({ value: "content/lp24-12-09" }),
+              new entities.Image({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241209gif.gif",
+              }),
+              new entities.OriginHref({ value: "content/lp24-12-05" }),
+              new entities.SlugImage({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241205b.png",
+              }),
+              new entities.OriginHref({ value: "content/lp24-12-04" }),
+              new entities.SlugImage({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241204b.png",
+              }),
+            ])
+```
+#### Image -> to initialize image that is not based on nothing inside **links: []""
+```
+new entities.Image({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241209gif.gif",
+              })
+```
 
 ## To use internally
 #### Language -> to initialize language for shops
