@@ -172,7 +172,6 @@ http://127.0.0.1:5500/templates/[file_name].js net::ERR_ABORTED 404 (Not Found)
 
 ## To use in app.js
 ### Campaign -> to initialize campaign in app.js
-#### description: Campaign can use in templates section: MondayFreebieNewsletter, 
 
 ### MondayFreebieNewsletter -> to initialize template with known properties
 ### MondayCategoryProducts -> to initialize categories for template in app.js
