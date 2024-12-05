@@ -11,16 +11,18 @@ SHIFT + ALT + ARROW LEFT/RIGHT Select to the end of the string
 
 ## How to setup global function to acces it everywhere
 1. Open index.html file
-2. Create <script></script> tag BEFORE <script type="module" src="app.js"></script> tag.
+2. Create ```<script></script>``` tag BEFORE ```<script type="module" src="app.js"></script>``` tag.
 3. Now, everything that will be defined inside script is accessible globally across whole app.
 
 Example:
+```
     <script>
       const name = "Me"
     </script>
     <script type="module" src="app.js"></script>
   </body>
 </html>
+```
 
 
 <!-- LOOP -->
