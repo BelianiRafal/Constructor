@@ -718,3 +718,13 @@ If not fetched dynamically will use local data which is located inside: main/dat
 - Normalize JSON products provided by user to constructor VIEW in normalizeProducts (path: utils/normalizeProducts)
 - If products already exist in localStorage for this campaign override them with new provided one.
 - If error happend while updating localStorage and error is isQuotaExceededError ask user about removing some localStorage data.
+
+
+## How to clear localStorage
+For new version: \
+- click **Clear storage** button
+
+For old version: \
+- click **F12**
+- open **Application** tab
+- select **Local storage** on the sidebar
