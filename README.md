@@ -230,9 +230,12 @@ new entities.Campaign({
         optimizeImg: false,
         figmaUrl:
           "https://www.figma.com/design/yc30oxD9wTbtNZvNvZvMfl/Free-wall-decor-(Copy)?node-id=0-1&node-type=canvas&t=S4hTJat0KKjjlJ1J-0",
-        templates: []
+        templates: [],
+        products: []
 }),
 ```
+#### products
+Imported products from extension. If not provided, products from localStorage will be taken.
 
 #### MondayFreebieNewsletter -> to initialize template inside **templates: []** with known properties
 ```
