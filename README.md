@@ -12,6 +12,37 @@ Function ```getTranslations```
 responsible for fetching translation for every tableQuery provided in **app.js** file. But before making it, app will modify/prepare in proper look tableRange by splitting it and concatenate backwards with country column provided in **config/shops.js**
 
 
+## Config object in app.js
+```
+{
+    campaign_url: "https://www.prologistics.info/news_email.php?id=",
+    issue_url: "https://www.prologistics.info/react/logs/issue_logs/",
+    alarm_days: 7,
+    confetti: true,
+    replaceToBrs: true,
+    emptyCell: (message) => `<span style='font-size: 20px; background: #ff0000;'>${message || "Cell is empty"}</span>`,
+}
+```
+#### campaign_url string
+> Value will be concatenated with campaign id provided in app.js in field: startId
+#### issue_url string
+> Value will be concatenated with issue id provided in app.js in field: issueCardId
+#### alarm_days number
+> Define alarm days to notify you if alarm for some campaign is active
+```
+alarm: {
+  isActive: true,
+  description: "Add soonending banners",
+}
+```
+#### confetti boolean
+> Decide whether app should notify you if copy template button clicked.
+#### replaceToBrs boolean
+> Decide whether app should replace '\n' to | '<br>' when fetching spreadsheet data
+#### emptyCell function
+> Error message will be placed if fallback is not provided for tableQuery and cell is empty in spreadsheet.
+
+
 ## How to setup global function/variable to access it everywhere
 1. Open **index.html** file
 2. Create ```<script></script>``` tag BEFORE ```<script type="module" src="app.js"></script>``` tag.
@@ -485,13 +516,20 @@ new entities.SlugImage({
 ```
 
 #### TableQuery -> to initialize table query for tableQueries in app.js for template
+> fallback: ```TYPE: [] OPTIOAL```
+> description: Fallback value will be palced in case of cell in spreadsheet is empty.
 ```
 new entities.TableQuery({
-                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-                tableName: "Voucher - 09.12.24 - Free wall decor!",
-                tableRange: "37:39",
-                name: "condition",
-              })
+  tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+  tableName: "Voucher - 16.12.24 - Free Candles!",
+  tableRange: "20:22",
+  name: "offerPart",
+  fallback: [
+    "Choose a FREE candle set from X options.",
+    "To claim your FREE candle set, use the code at the checkout when you spend a minimum of XX",
+    "The offer is valid until the 22th of December."
+  ]
+})
 ```
 
 #### TableQueryHeader -> to initialize table query for Header spreadsheet
