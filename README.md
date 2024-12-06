@@ -516,7 +516,7 @@ new entities.SlugImage({
 ```
 
 #### TableQuery -> to initialize table query for tableQueries in app.js for template
-> fallback: ```TYPE: [] OPTIOAL```
+> fallback: ```TYPE: [] OPTIONAL``` \
 > description: Fallback value will be palced in case of cell in spreadsheet is empty.
 ```
 new entities.TableQuery({
