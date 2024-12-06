@@ -653,3 +653,27 @@ If not fetched dynamically will use local data which is located inside: main/dat
 ```
   getCampaignData("Regular Conditions")
 ```
+
+
+## Products render flow
+#### path: main/initApp.js line 143
+- Get products from localstorage
+- If products defined parse products array if not assing empty array
+- Find products for campaign by startId (campaign_id)
+- Initialize TemplateHandlers with other data and products
+- Provide getProductById function for template properites
+
+## Products parsing flow
+#### path: main/initApp.js line 228
+- Listen to button click
+- Call prompt to receive input from user
+- If no input provided show Toast: Input incorrect
+- If input provided parse provided JSON products.
+- IF error occured once parsing, show error: Products parse error.
+- Get selectdCampaign from global state
+- Get products from localstorage
+- Parse JSON products
+- Find products for campaign by startId (campaign_id)
+- Normalize JSON products provided by user to constructor VIEW in normalizeProducts (path: utils/normalizeProducts)
+- If products already exist in localStorage for this campaign override them with new provided one.
+- If error happend while updating localStorage and error is isQuotaExceededError ask user about removing some localStorage data.
