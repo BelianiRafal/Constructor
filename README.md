@@ -174,6 +174,7 @@ export async function [template_name]({
    name,
    categories,
    background,
+   config
    }) {
     return `<p>template_name</p>`
 }
@@ -198,6 +199,7 @@ export async function [template_name]({
    name,
    categories,
    background,
+   config
    }) {
     return `<p>MondayTemplate</p>`
 }
@@ -205,6 +207,30 @@ export async function [template_name]({
 4. Add template import to **/templates/index.js**
 5. Add template to templates object.
 6. Use it in **app.js** file by accessing templates.[template_name]
+
+## Every template that will be rendered has access to:
+```
+{
+  links,             -> links provided by user in app.js file for template
+  getCampaignData,   -> function responsible for get Campaign data which is defined in app.js for Campaign object in hash CSV format.
+  getProductById,    -> function responsible for get product by id
+  getCategoryLink,   -> function responsible for get category link by ENG category
+  getCategoryTitle,  -> function responsible for get category title by ENG category
+  getPhrase,         -> function responsible for get translation template
+  getFooter,         -> function responsible for get footer translations by ENG word
+  getHeader,         -> function responsible for get header translations by ENG word
+  queries,           -> object with properites that user defined in tableQueries array.
+  id,                -> campaign id
+  shop,              -> to see what properties available: config/shops.js
+  country,           -> get access to rendered country
+  type,              -> template type (newsletter or landing)
+  name,              -> template name,
+  utm:               -> tracking url with id,
+  categories,        -> categories handled by app
+  background,        -> background color | default #ffffff -> located in initApp.js, | possibility to add user color in app.js for template.
+  config             -> config object that is defined in app.js file
+}
+```
 
 ## Entities:
 #### path: entities/shops.js
@@ -611,29 +637,6 @@ new entities.Image({
   -Landing template should have type landing (see: Where Css and Types located)
 3. Run live server.
 4. Select Campaign, Template, Seller, Country.
-
-## Every template that will be rendered has access to:
-```
-{
-  links,             -> links provided by user in app.js file for template
-  getCampaignData,   -> function responsible for get Campaign data which is defined in app.js for Campaign object in hash CSV format.
-  getProductById,    -> function responsible for get product by id
-  getCategoryLink,   -> function responsible for get category link by ENG category
-  getCategoryTitle,  -> function responsible for get category title by ENG category
-  getPhrase,         -> function responsible for get translation template
-  getFooter,         -> function responsible for get footer translations by ENG word
-  getHeader,         -> function responsible for get header translations by ENG word
-  queries,           -> object with properites that user defined in tableQueries array.
-  id,                -> campaign id
-  shop,              -> to see what properties available: config/shops.js
-  country,           -> get access to rendered country
-  type,              -> template type (newsletter or landing)
-  name,              -> template name,
-  utm:               -> tracking url with id,
-  categories,        -> categories handled by app
-  background,        -> background color | default #ffffff -> located in initApp.js | possibility to add user color in app.js for template.
-}
-```
 
 ## Update Footer, Header, Translation templates, Category Links, Category Titles
 ### path: main/data
