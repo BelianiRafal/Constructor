@@ -241,7 +241,7 @@ export async function [template_name]({
 > If you don't know which property to define, by clicking Ctrl+Space you will get hint window.\
 **But you can always define everything as we do previously.**
 
-## To use in app.js
+## Example
 #### Campaign -> to initialize campaign in app.js
 ```
 new entities.Campaign({
