@@ -225,7 +225,7 @@ export async function [template_name]({
   country,           -> get access to rendered country
   type,              -> template type (newsletter or landing)
   name,              -> template name,
-  utm:               -> tracking url with id,
+  utm:               -> tracking url with id for newsletter type, emprty string for landing type see utils/getTrackingUrl.js,
   categories,        -> categories handled by app
   background,        -> background color | default #ffffff -> located in initApp.js, | possibility to add user color in app.js for template.
   config             -> config object that is defined in app.js file
