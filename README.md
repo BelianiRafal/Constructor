@@ -687,13 +687,553 @@ If not fetched dynamically will use local data which is located inside: main/dat
 2. Copy values from spreadsheet from 1 row and column to last row last column
 3. Open https://csvjson.com/csv2json select Hash option
 4. Convert value to JSON
-5. Add to **app.js** file
+5. Add ```data``` property for Campaign in **app.js** file
+
+#### Example
+```
+      new entities.Campaign({
+        data: {
+          CHDE: {
+            "[name='shop']": 1,
+            "[name='template']": 29056,
+            "[name='language[]']": "german",
+            "[name='cta_lang']": "german",
+            "[name='title']": "Gratis Duftkerzen 3er Set 🕯️✨❄️",
+            "[name='body']":
+              "Erhalte ein GRATIS Duftkerzen-Set zu jedem Einkauf über 150 Fr. und verwandle dein Zuhause in ein Winterwunderland!",
+            "[name='click_action']":
+              "https://www.beliani.ch/content/lp24-12-16/?utm_source=PUSH&utm_medium=lp24-12-16&utm_campaign=free+candles",
+            "[name='icon']":
+              "https://beliani.info/newsletter/2022/domainIcon_transparent.png",
+            "[name='image']":
+              "https://upload.pictureserver.net/static/2024/lp2024-12-16push.png",
+          },
+          CHFR: {
+            "[name='shop']": 1,
+            "[name='template']": 29057,
+            "[name='language[]']": "french",
+            "[name='cta_lang']": "french",
+            "[name='title']": "Recevez un set de bougies gratuit 🎁🕯️🎄",
+            "[name='body']":
+              "Recevez un set de bougies gratuit avec vos achats ! Découvrez les styles de Noël les plus appréciés et choisissez celui qui vous convient.",
+            "[name='click_action']":
+              "https://www.beliani.ch/content/lp24-12-16/?utm_source=PUSH&utm_medium=lp24-12-16&utm_campaign=free+candles",
+            "[name='icon']":
+              "https://beliani.info/newsletter/2022/domainIcon_transparent.png",
+            "[name='image']":
+              "https://upload.pictureserver.net/static/2024/lp2024-12-16push.png",
+          },
+          AT: {
+            "[name='shop']": 8,
+            "[name='template']": 29058,
+            "[name='language[]']": "germanDE",
+            "[name='cta_lang']": "germanDE",
+            "[name='title']": "Gratis Duftkerzen 3er Set 🕯️✨❄️",
+            "[name='body']":
+              "Erhalte ein GRATIS Duftkerzen-Set zu jedem Einkauf über 100 € und verwandle dein Zuhause in ein Winterwunderland!",
+            "[name='click_action']":
+              "https://www.beliani.at/content/lp24-12-16/?utm_source=PUSH&utm_medium=lp24-12-16&utm_campaign=free+candles",
+            "[name='icon']":
+              "https://beliani.info/newsletter/2022/domainIcon_transparent.png",
+            "[name='image']":
+              "https://upload.pictureserver.net/static/2024/lp2024-12-16push.png",
+          },
+          CZ: {
+            "[name='shop']": 26,
+            "[name='template']": 29059,
+            "[name='language[]']": "czech",
+            "[name='cta_lang']": "czech",
+            "[name='title']": "Sada svíček zdarma",
+            "[name='body']":
+              "Nakupujte ještě dnes a získejte k objednávce sadu svíček zdarma. Objevte oblíbené vánoční styly a vyberte si ten, který dokonale ladí s vaším vkusem.",
+            "[name='click_action']":
+              "https://www.beliani.cz/content/lp24-12-16/?utm_source=PUSH&utm_medium=lp24-12-16&utm_campaign=free+candles",
+            "[name='icon']":
+              "https://beliani.info/newsletter/2022/domainIcon_transparent.png",
+            "[name='image']":
+              "https://upload.pictureserver.net/static/2024/lp2024-12-16push.png",
+          },
+          DE: {
+            "[name='shop']": 3,
+            "[name='template']": 29060,
+            "[name='language[]']": "germanDE",
+            "[name='cta_lang']": "germanDE",
+            "[name='title']": "Gratis Duftkerzen 3er Set 🕯️✨❄️",
+            "[name='body']":
+              "Erhalte ein GRATIS Duftkerzen-Set zu jedem Einkauf über 150 € und verwandle dein Zuhause in ein Winterwunderland!",
+            "[name='click_action']":
+              "https://www.beliani.de/content/lp24-12-16/?utm_source=PUSH&utm_medium=lp24-12-16&utm_campaign=free+candles",
+            "[name='icon']":
+              "https://beliani.info/newsletter/2022/domainIcon_transparent.png",
+            "[name='image']":
+              "https://upload.pictureserver.net/static/2024/lp2024-12-16push.png",
+          }
+        },
+        startId: "29056",
+        name: "Newsletter free candles",
+        date: "2024.12.16",
+        issueCardId: "323983",
+        alarm: {
+          isActive: false,
+        },
+        isArchive: false,
+        optimizeImg: false,
+        figmaUrl:
+          "https://www.figma.com/design/uMrv7ddclqeiUAFHElY7Jf/2024.12.16-free-candles-(Copy)?m=auto&fuid=1185112605564950178",
+        templates: [
+          new entities.MondayFreebieNewsletter({
+            insideBanner: {
+              href: "content/lp24-12-04",
+              src: "https://upload.pictureserver.net/static/2024/uk202401216InsideBanner.png",
+              src_config: {
+                name: "202401216InsideBanner.png",
+              },
+            },
+            background: "#FFCCB7",
+            intro: {
+              background: "#750000",
+              color: "#ffffff",
+            },
+            offerPart: {
+              type: "code",
+            },
+            categories: [
+              new entities.MondayCategoryProducts({
+                name: "New York",
+                background: "#750000",
+                color: "#ffffff",
+                src: "https://upload.pictureserver.net/static/2024/20241216Category1.png",
+                href: "https://www.beliani.ch/christmas-by-style/new-york-style-christmas/",
+                products: [
+                  new entities.ProductInstance({
+                    id: "525527",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category11.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "429466",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category12.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "416655",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category13.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "296313",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category14.png",
+                  }),
+                ],
+              }),
+              new entities.MondayCategoryProducts({
+                name: "Traditional",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2024/20241216Category2.png",
+                href: "https://www.beliani.ch/christmas-by-style/traditional-christmas/",
+                products: [
+                  new entities.ProductInstance({
+                    id: "340565",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category21.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "295319",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category22.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "499948",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category23.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "335169",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category24.png",
+                  }),
+                ],
+              }),
+              new entities.MondayCategoryProducts({
+                name: "Rustic",
+                background: "#750000",
+                color: "#ffffff",
+                src: "https://upload.pictureserver.net/static/2024/20241216Category3.png",
+                href: "https://www.beliani.ch/christmas-by-style/rustic-christmas/",
+                products: [
+                  new entities.ProductInstance({
+                    id: "202633",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category31.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "340925",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category32.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "336323",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category33.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "376699",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category34.png",
+                  }),
+                ],
+              }),
+              new entities.MondayCategoryProducts({
+                name: "Scandinavian",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2024/20241216Category4.png",
+                href: "https://www.beliani.ch/christmas-by-style/scandinavian-christmas/",
+                products: [
+                  new entities.ProductInstance({
+                    id: "340487",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category41.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "298107",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category42.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "429928",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category43.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "229230",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category44.png",
+                  }),
+                ],
+              }),
+            ],
+            links: new entities.TemplateLinks([
+              new entities.OriginHref({ value: "content/lp24-12-16" }),
+              new entities.SlugImage({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241216_01.png",
+              }),
+              new entities.OriginHref({ value: "content/lp24-12-16" }),
+              new entities.Image({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241216gif.gif",
+              }),
+              new entities.OriginHref({ value: "content/lp24-12-05" }),
+              new entities.SlugImage({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241205b.png",
+              }),
+              new entities.OriginHref({ value: "content/lp24-12-04" }),
+              new entities.SlugImage({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241204b.png",
+              }),
+            ]),
+            tableQueries: [
+              new entities.TableQuery({
+                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+                tableName: "Voucher - 16.12.24 - Free Candles!",
+                tableRange: "20:22",
+                name: "offerPart",
+                fallback: [
+                  "Choose a FREE candle set from X options.",
+                  "To claim your FREE candle set, use the code at the checkout when you spend a minimum of XX",
+                  "The offer is valid until the 22th of December.",
+                ],
+              }),
+              new entities.TableQuery({
+                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+                tableName: "Voucher - 16.12.24 - Free Candles!",
+                tableRange: "24:25",
+                name: "intro",
+                fallback: [
+                  "Christmas styles",
+                  "Create a festive wonderland with our Christmas interior design styles, curated to inspire your perfect seasonal decor.",
+                ],
+              }),
+              new entities.TableQuery({
+                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+                tableName: "Voucher - 16.12.24 - Free Candles!",
+                tableRange: "26:29",
+                name: "categories",
+                fallback: ["New York", "Traditional", "Rustic", "Scandinavian"],
+              }),
+              new entities.TableQuery({
+                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+                tableName: "Voucher - 16.12.24 - Free Candles!",
+                tableRange: "35:37",
+                name: "condition",
+                fallback: [
+                  "Choose from Set of 3 100% Soy Wax Candles, SHEER JOY, Bergamot/Wind of Sea/Sage Sea Salt, Set of 3 100% Soy Wax Candles, SHEER JOY, Lavender/Rosemary Lavender/Geranium Lavender, Set of 3 100% Soy Wax Candles, SHEER JOY, Golden Apple/Chocolate/Amber, Set of 3 100% Soy Wax Candles, SHEER JOY, Ocean/White Tea/Summer Meadow. After the customer has entered the voucher code (step 3) a pop up will appear with products to choose from. The voucher can only be used with the code yyyy with a minimum order amount xxxx. Then the customer receives a free product of their choice. Should a customer return a product they have to return the free product as well. This voucher is not refundable. Only one voucher redeemable per person and order. This voucher cannot be combined with other discounts. This voucher is only valid until 22.12.24 only on beliani.xxx or as long as the products are in stock. This voucher cannot be used for existing orders. This offer is not valid for resellers.",
+                  `All items are subject to availability. All prices are correct as of dd.mm.yyyy and are subject to change without notification.`,
+                  `If you wish to unsubscribe from the newsletter, you can do so by clicking on the <a href="[[newsunassignurl]]"style="text-decoration:none;color:#000000;">Unsubscribe</a> link.`,
+                ],
+              }),
+            ],
+            freebies: {
+              items: [
+                new entities.FreebieItem({
+                  row: 1,
+                  col: 2,
+                  products: [
+                    {
+                      id: "409176",
+                      src: "https://upload.pictureserver.net/static/2024/20241216Freebie1.png",
+                      style: "padding-right: 10px; padding-left: 60px;",
+                    },
+                    {
+                      id: "409071",
+                      src: "https://upload.pictureserver.net/static/2024/20241216Freebie2.png",
+                      style: "padding-right: 60px; padding-left: 10px;",
+                    },
+                  ],
+                }),
+                new entities.FreebieItem({
+                  row: 1,
+                  col: 2,
+                  products: [
+                    {
+                      id: "409037",
+                      src: "https://upload.pictureserver.net/static/2024/20241216Freebie3.png",
+                      style: "padding-right: 10px; padding-left: 60px;",
+                    },
+                    {
+                      id: "409123",
+                      src: "https://upload.pictureserver.net/static/2024/20241216Freebie4.png",
+                      style: "padding-right: 60px; padding-left: 10px;",
+                    },
+                  ],
+                }),
+              ],
+            },
+          }),
+          new entities.MondayFreebieLanding({
+            insideBanner: {
+              href: "content/lp24-12-04",
+              src: "https://upload.pictureserver.net/static/2024/uk202401216InsideBanner.png",
+              src_config: {
+                name: "202401216InsideBanner.png",
+              },
+            },
+            background: "#FFCCB7",
+            intro: {
+              background: "#750000",
+              color: "#ffffff",
+            },
+            offerPart: {
+              type: "code",
+            },
+            categories: [
+              new entities.MondayCategoryProducts({
+                name: "New York",
+                background: "#750000",
+                color: "#ffffff",
+                src: "https://upload.pictureserver.net/static/2024/20241216Category1.png",
+                href: "https://www.beliani.ch/christmas-by-style/new-york-style-christmas/",
+                products: [
+                  new entities.ProductInstance({
+                    id: "525527",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category11.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "429466",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category12.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "416655",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category13.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "296313",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category14.png",
+                  }),
+                ],
+              }),
+              new entities.MondayCategoryProducts({
+                name: "Traditional",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2024/20241216Category2.png",
+                href: "https://www.beliani.ch/christmas-by-style/traditional-christmas/",
+                products: [
+                  new entities.ProductInstance({
+                    id: "340565",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category21.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "295319",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category22.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "499948",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category23.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "335169",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category24.png",
+                  }),
+                ],
+              }),
+              new entities.MondayCategoryProducts({
+                name: "Rustic",
+                background: "#750000",
+                color: "#ffffff",
+                src: "https://upload.pictureserver.net/static/2024/20241216Category3.png",
+                href: "https://www.beliani.ch/christmas-by-style/rustic-christmas/",
+                products: [
+                  new entities.ProductInstance({
+                    id: "202633",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category31.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "340925",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category32.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "336323",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category33.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "376699",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category34.png",
+                  }),
+                ],
+              }),
+              new entities.MondayCategoryProducts({
+                name: "Scandinavian",
+                background: "#FFCCB7",
+                color: "#000000",
+                src: "https://upload.pictureserver.net/static/2024/20241216Category4.png",
+                href: "https://www.beliani.ch/christmas-by-style/scandinavian-christmas/",
+                products: [
+                  new entities.ProductInstance({
+                    id: "340487",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category41.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "298107",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category42.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "429928",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category43.png",
+                  }),
+                  new entities.ProductInstance({
+                    id: "229230",
+                    src: "https://upload.pictureserver.net/static/2024/20241216Category44.png",
+                  }),
+                ],
+              }),
+            ],
+            links: new entities.TemplateLinks([
+              new entities.OriginHref({ value: "content/lp24-12-16" }),
+              new entities.SlugImage({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241216_01.png",
+              }),
+              new entities.OriginHref({ value: "content/lp24-12-16" }),
+              new entities.Image({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241216gif.gif",
+              }),
+              new entities.OriginHref({ value: "content/lp24-12-05" }),
+              new entities.SlugImage({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241205b.png",
+              }),
+              new entities.OriginHref({ value: "content/lp24-12-04" }),
+              new entities.SlugImage({
+                value:
+                  "https://upload.pictureserver.net/static/2024/20241204b.png",
+              }),
+            ]),
+            tableQueries: [
+              new entities.TableQuery({
+                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+                tableName: "Voucher - 16.12.24 - Free Candles!",
+                tableRange: "20:22",
+                name: "offerPart",
+                fallback: [
+                  "Choose a FREE candle set from X options.",
+                  "To claim your FREE candle set, use the code at the checkout when you spend a minimum of XX",
+                  "The offer is valid until the 22th of December.",
+                ],
+              }),
+              new entities.TableQuery({
+                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+                tableName: "Voucher - 16.12.24 - Free Candles!",
+                tableRange: "23",
+                name: "code",
+                fallback: ["Code: XX"],
+              }),
+              new entities.TableQuery({
+                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+                tableName: "Voucher - 16.12.24 - Free Candles!",
+                tableRange: "24:25",
+                name: "intro",
+                fallback: [
+                  "Christmas styles",
+                  "Create a festive wonderland with our Christmas interior design styles, curated to inspire your perfect seasonal decor.",
+                ],
+              }),
+              new entities.TableQuery({
+                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+                tableName: "Voucher - 16.12.24 - Free Candles!",
+                tableRange: "26:29",
+                name: "categories",
+                fallback: ["New York", "Traditional", "Rustic", "Scandinavian"],
+              }),
+              new entities.TableQuery({
+                tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+                tableName: "Voucher - 16.12.24 - Free Candles!",
+                tableRange: "35:37",
+                name: "condition",
+                fallback: [
+                  "Choose from Set of 3 100% Soy Wax Candles, SHEER JOY, Bergamot/Wind of Sea/Sage Sea Salt, Set of 3 100% Soy Wax Candles, SHEER JOY, Lavender/Rosemary Lavender/Geranium Lavender, Set of 3 100% Soy Wax Candles, SHEER JOY, Golden Apple/Chocolate/Amber, Set of 3 100% Soy Wax Candles, SHEER JOY, Ocean/White Tea/Summer Meadow. After the customer has entered the voucher code (step 3) a pop up will appear with products to choose from. The voucher can only be used with the code yyyy with a minimum order amount xxxx. Then the customer receives a free product of their choice. Should a customer return a product they have to return the free product as well. This voucher is not refundable. Only one voucher redeemable per person and order. This voucher cannot be combined with other discounts. This voucher is only valid until 22.12.24 only on beliani.xxx or as long as the products are in stock. This voucher cannot be used for existing orders. This offer is not valid for resellers.",
+                  `All items are subject to availability. All prices are correct as of dd.mm.yyyy and are subject to change without notification.`,
+                  `If you wish to unsubscribe from the newsletter, you can do so by clicking on the <a href="[[newsunassignurl]]"style="text-decoration:none;color:#000000;">Unsubscribe</a> link.`,
+                ],
+              }),
+            ],
+            freebies: {
+              items: [
+                new entities.FreebieItem({
+                  row: 1,
+                  col: 2,
+                  products: [
+                    {
+                      id: "409176",
+                      src: "https://upload.pictureserver.net/static/2024/20241216Freebie1.png",
+                      style: "padding-right: 10px; padding-left: 60px;",
+                    },
+                    {
+                      id: "409071",
+                      src: "https://upload.pictureserver.net/static/2024/20241216Freebie2.png",
+                      style: "padding-right: 60px; padding-left: 10px;",
+                    },
+                  ],
+                }),
+                new entities.FreebieItem({
+                  row: 1,
+                  col: 2,
+                  products: [
+                    {
+                      id: "409037",
+                      src: "https://upload.pictureserver.net/static/2024/20241216Freebie3.png",
+                      style: "padding-right: 10px; padding-left: 60px;",
+                    },
+                    {
+                      id: "409123",
+                      src: "https://upload.pictureserver.net/static/2024/20241216Freebie4.png",
+                      style: "padding-right: 60px; padding-left: 10px;",
+                    },
+                  ],
+                }),
+              ],
+            },
+          }),
+        ],
+        products: [],
+      })
+```
 
 ## Use campaign data in template
 1. Check if function "getCampaignData" has been added in template
 2. Call "getCampaignData" function with Column name parameter in template place where you want get result.
 
-## Example 
+#### Example 
 ```
   getCampaignData("Regular Conditions")
 ```
